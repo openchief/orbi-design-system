@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UI shell left panel · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#ui-shell">UI shell</a></li>
+      <li aria-current="page">UI shell left panel</li>
+    </ol></nav>
+    <h1>UI shell left panel</h1>
+    <p>Primary side navigation with grouped links, expandable sections and a collapsible rail. It reuses the dashboard’s vertical-tab styling.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default & collapsible</h2>
+    <div class="doc-demo doc-demo--pad0">
+<div class="shell-frame">
+  <div class="shell-body">
+    <aside class="shell-left" id="sl1" aria-label="Sidebar">
+      <div class="row row--between" style="padding:0 .5rem .5rem"><span class="label t-small t-secondary">Workspace</span><button class="icon-button icon-button--sm" data-toggle-class="is-collapsed" data-toggle-target="#sl1" aria-label="Collapse sidebar" type="button"><i class="ph-sidebar-simple-bold"></i></button></div>
+      <a href="#" class="active" data-nav-active><i class="ph-house-bold"></i><span class="label">Overview</span></a>
+      <a href="#" data-nav-active><i class="ph-plugs-connected-bold"></i><span class="label">Integrations</span><span class="tag tag--blue tag--sm">12</span></a>
+      <a href="#" data-nav-active><i class="ph-chart-bar-bold"></i><span class="label">Reports</span></a>
+      <div class="menu-label">Manage</div>
+      <details class="shell-left-group" open><summary><i class="ph-users-bold"></i><span class="label">Team</span></summary><div><a href="#" data-nav-active>Members</a><a href="#" data-nav-active>Roles</a></div></details>
+      <a href="#" data-nav-active><i class="ph-credit-card-bold"></i><span class="label">Billing</span></a>
+      <div class="shell-left-footer"><a href="#"><i class="ph-gear-bold"></i><span class="label">Settings</span></a></div>
+    </aside>
+    <div class="shell-main"><h2 class="t-h2">Page content</h2><p class="t-small t-secondary mt-4">Use the collapse button to switch the panel to an icon rail.</p></div>
+  </div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Dark variant</h2>
+    <div class="doc-demo doc-demo--pad0">
+<div class="shell-frame" style="min-height:300px"><div class="shell-body">
+  <aside class="shell-left shell-left--dark" aria-label="Sidebar"><a href="#" class="active"><i class="ph-house-bold"></i><span class="label">Overview</span></a><a href="#"><i class="ph-plugs-connected-bold"></i><span class="label">Integrations</span></a><a href="#"><i class="ph-chart-bar-bold"></i><span class="label">Reports</span></a></aside>
+  <div class="shell-main"></div></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">.shell-left</code></td><td>260px panel; <code class="code-inline">.is-collapsed</code> → 68px icon rail</td></tr><tr><td><code class="code-inline">.shell-left-group</code></td><td>Expandable <code class="code-inline">details</code> section</td></tr><tr><td><code class="code-inline">.shell-left--dark</code></td><td>Inverted theme</td></tr><tr><td><code class="code-inline">[data-toggle-class][data-toggle-target]</code></td><td>Generic class toggle hook</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="ui-shell-header.html"><i class="ph-arrow-left-bold"></i> UI shell header</a></span><span><a class="link" href="ui-shell-right-panel.html">UI shell right panel <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

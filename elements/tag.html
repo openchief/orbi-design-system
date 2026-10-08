@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tag · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#content">Content</a></li>
+      <li aria-current="page">Tag</li>
+    </ol></nav>
+    <h1>Tag</h1>
+    <p>Labels, categorises or filters items. Supports colours, sizes, status dots, removal and toggling.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Colours</h2>
+    <div class="doc-demo ">
+<div class="row"><span class="tag">Default</span><span class="tag tag--blue">Blue</span><span class="tag tag--green">Green</span><span class="tag tag--yellow">Yellow</span><span class="tag tag--red">Red</span><span class="tag tag--outline">Outline</span><span class="tag tag--solid">Solid</span></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Sizes & status</h2>
+    <div class="doc-demo ">
+<div class="row"><span class="tag tag--sm tag--blue">Small</span><span class="tag tag--blue">Default</span><span class="tag tag--lg tag--blue">Large</span><span class="tag tag--green"><span class="dot-status"></span>Active</span><span class="tag tag--red"><span class="dot-status"></span>Failed</span></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Removable</h2>
+    <div class="doc-demo ">
+<div class="row"><span class="tag tag--blue">Design<button class="tag-remove" type="button" aria-label="Remove" onclick="this.parentNode.remove()">✕</button></span><span class="tag tag--blue">Engineering<button class="tag-remove" type="button" aria-label="Remove" onclick="this.parentNode.remove()">✕</button></span><span class="tag tag--blue">Product<button class="tag-remove" type="button" aria-label="Remove" onclick="this.parentNode.remove()">✕</button></span></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Filter tags</h2>
+    <div class="doc-demo ">
+<div class="row"><button class="tag" type="button" aria-pressed="true" onclick="this.setAttribute('aria-pressed',this.getAttribute('aria-pressed')!=='true')">All</button><button class="tag" type="button" aria-pressed="false" onclick="this.setAttribute('aria-pressed',this.getAttribute('aria-pressed')!=='true')">Tools</button><button class="tag" type="button" aria-pressed="false" onclick="this.setAttribute('aria-pressed',this.getAttribute('aria-pressed')!=='true')">Chat</button></div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="structured-list.html"><i class="ph-arrow-left-bold"></i> Structured list</a></span><span><a class="link" href="tile.html">Tile <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

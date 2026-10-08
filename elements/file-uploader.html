@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>File uploader · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">File uploader</li>
+    </ol></nav>
+    <h1>File uploader</h1>
+    <p>Drag-and-drop or browse for files, with per-file progress and size validation (limit 2 MB in this demo).</p>
+  </div>
+  <section class="doc-section">
+    <h2>Drop zone</h2>
+    <div class="doc-demo ">
+<div data-uploader data-max-mb="2" style="max-width:520px">
+  <label class="file-drop"><i class="ph-upload-simple-bold"></i><strong>Drop files here or click to browse</strong><p>PNG, JPG or PDF up to 2 MB</p><input type="file" multiple></label>
+  <div class="file-list"></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Button only</h2>
+    <div class="doc-demo ">
+<div data-uploader data-max-mb="2" style="max-width:520px">
+  <div class="file-drop" style="padding:1.5rem;flex-direction:row;justify-content:space-between;text-align:left"><div><strong>Attachments</strong><p>Up to 2 MB each</p></div><span class="button"><i class="ph-paperclip-bold"></i><span>Add files</span></span><input type="file" multiple></div>
+  <div class="file-list"></div>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="dropdown.html"><i class="ph-arrow-left-bold"></i> Dropdown</a></span><span><a class="link" href="form.html">Form <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

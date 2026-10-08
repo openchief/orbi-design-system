@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accordion · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#content">Content</a></li>
+      <li aria-current="page">Accordion</li>
+    </ol></nav>
+    <h1>Accordion</h1>
+    <p>Vertically stacked panels that reveal or hide content. Built on native <code>details</code>, so it works without JavaScript.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo ">
+<div class="accordion">
+  <details class="accordion-item" open><summary>What is an integration?</summary><div class="accordion-content">An integration connects Orbi to another tool so data and events flow between them.</div></details>
+  <details class="accordion-item"><summary>How do I enable one?</summary><div class="accordion-content">Flip the toggle on the integration’s card. You can disable it at any time.</div></details>
+  <details class="accordion-item"><summary>Can I request a new one?</summary><div class="accordion-content">Yes — use the “Request integration” button on the Integrations page.</div></details>
+  <details class="accordion-item is-disabled"><summary>Disabled item</summary></details>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Single-open & flush</h2>
+    <div class="doc-demo ">
+<div class="accordion accordion--flush" data-accordion-single>
+  <details class="accordion-item" open><summary>Billing</summary><div class="accordion-content">Manage invoices and payment methods.</div></details>
+  <details class="accordion-item"><summary>Security</summary><div class="accordion-content">Two-factor authentication and sessions.</div></details>
+  <details class="accordion-item"><summary>Privacy</summary><div class="accordion-content">Data retention and exports.</div></details>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="ai-label.html"><i class="ph-arrow-left-bold"></i> AI label</a></span><span><a class="link" href="avatar.html">Avatar <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

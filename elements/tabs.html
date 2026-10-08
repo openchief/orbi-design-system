@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabs · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#navigation">Navigation</a></li>
+      <li aria-current="page">Tabs</li>
+    </ol></nav>
+    <h1>Tabs</h1>
+    <p>Organises related content into views. The horizontal and vertical styles are lifted from the dashboard.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Horizontal</h2>
+    <div class="doc-demo ">
+<div data-tabs>
+  <div class="horizontal-tabs" role="tablist">
+    <button class="active" data-tab="a" role="tab" aria-selected="true">Overview</button>
+    <button data-tab="b" role="tab" aria-selected="false">Activity</button>
+    <button data-tab="c" role="tab" aria-selected="false">Settings</button>
+    <button class="is-disabled" role="tab" disabled>Disabled</button>
+  </div>
+  <div class="tab-panel" data-panel="a">Overview content: a summary of the project.</div>
+  <div class="tab-panel" data-panel="b" hidden>Activity content: recent events.</div>
+  <div class="tab-panel" data-panel="c" hidden>Settings content: preferences.</div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Contained</h2>
+    <div class="doc-demo ">
+<div class="tabs--contained" data-tabs>
+  <div class="horizontal-tabs" role="tablist"><button class="active" data-tab="x" role="tab">Day</button><button data-tab="y" role="tab">Week</button><button data-tab="z" role="tab">Month</button></div>
+  <div class="tab-panel" data-panel="x">Daily view</div><div class="tab-panel" data-panel="y" hidden>Weekly view</div><div class="tab-panel" data-panel="z" hidden>Monthly view</div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Vertical</h2>
+    <div class="doc-demo ">
+<div data-tabs style="display:flex;gap:2rem">
+  <div class="vertical-tabs" role="tablist" style="width:200px">
+    <button class="active" data-tab="v1" role="tab">View all</button><button data-tab="v2" role="tab">Developer tools</button><button data-tab="v3" role="tab">Communication</button>
+  </div>
+  <div style="flex:1"><div data-panel="v1">All integrations.</div><div data-panel="v2" hidden>Developer tools.</div><div data-panel="v3" hidden>Communication apps.</div></div>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="progress-indicator.html"><i class="ph-arrow-left-bold"></i> Progress indicator</a></span><span><a class="link" href="tree-view.html">Tree view <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

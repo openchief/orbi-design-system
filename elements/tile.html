@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tile · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#content">Content</a></li>
+      <li aria-current="page">Tile</li>
+    </ol></nav>
+    <h1>Tile</h1>
+    <p>A container for grouping related content. Comes in static, clickable, selectable and expandable forms.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Static & flat</h2>
+    <div class="doc-demo ">
+<div class="grid-2"><div class="tile"><h3>Static tile</h3><p>Uses the dashboard’s layered card shadow.</p></div><div class="tile tile--flat"><h3>Flat tile</h3><p>Border instead of shadow.</p></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Clickable</h2>
+    <div class="doc-demo ">
+<div class="grid-2"><a href="#" class="tile tile--clickable"><h3>Documentation</h3><p>Guides and API references.</p><i class="ph-arrow-right-bold tile-arrow"></i></a><a href="#" class="tile tile--clickable"><h3>Changelog</h3><p>See what’s new.</p><i class="ph-arrow-right-bold tile-arrow"></i></a></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Selectable</h2>
+    <div class="doc-demo ">
+<div class="grid-3">
+  <label class="tile tile--selectable"><input type="radio" name="plan" checked><span class="tile-check">✓</span><h3>Starter</h3><p>$0 — for individuals.</p></label>
+  <label class="tile tile--selectable"><input type="radio" name="plan"><span class="tile-check">✓</span><h3>Team</h3><p>$12 — for small teams.</p></label>
+  <label class="tile tile--selectable"><input type="radio" name="plan"><span class="tile-check">✓</span><h3>Scale</h3><p>$40 — for companies.</p></label>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Expandable</h2>
+    <div class="doc-demo ">
+<div class="tile tile--expandable" style="max-width:420px"><h3>Deployment details</h3><p>Production · us-east-1</p>
+  <div class="tile-more"><p>Last deployed 4 minutes ago by Jane. Build #1482 passed all checks.</p></div>
+  <button class="button button--ghost button--sm tile-toggle" type="button"><span>Details</span><i class="ph-caret-down-bold"></i></button></div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="tag.html"><i class="ph-arrow-left-bold"></i> Tag</a></span><span><a class="link" href="empty-state.html">Empty state <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

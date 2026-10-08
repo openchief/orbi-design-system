@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data table · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#content">Content</a></li>
+      <li aria-current="page">Data table</li>
+    </ol></nav>
+    <h1>Data table</h1>
+    <p>Displays tabular data with sorting, selection, search, batch actions and pagination.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Interactive table</h2><p>Click headers to sort, select rows for batch actions, or type to filter.</p>
+    <div class="doc-demo doc-demo--pad0">
+<div class="table-wrap" data-table>
+  <div class="table-toolbar"><div><h3>Deployments</h3><p>Last 30 days</p></div><div class="row"><div class="search search--sm"><input type="text" data-table-filter placeholder="Filter" aria-label="Filter rows"><button type="submit" aria-label="Search"><i class="ph-magnifying-glass-bold"></i></button></div><button class="button button--primary button--sm" type="button"><i class="ph-plus-bold"></i><span>New</span></button></div></div>
+  <div class="table-toolbar table-batch is-batch" hidden><span data-count>0 selected</span><div class="row"><button class="button button--sm" type="button"><i class="ph-trash-bold"></i><span>Delete</span></button><button class="button button--sm" data-batch-clear type="button"><span>Cancel</span></button></div></div>
+  <div class="table-scroll"><table class="data-table"><thead><tr>
+    <th class="cell-select"><label class="checkbox"><input type="checkbox" aria-label="Select all"><span class="box"></span></label></th>
+    <th class="sortable">Name</th><th class="sortable">Status</th><th class="sortable num">Duration</th><th class="sortable">Owner</th><th></th></tr></thead><tbody>
+    <tr><td class="cell-select"><label class="checkbox"><input type="checkbox" aria-label="Select row"><span class="box"></span></label></td><td>api-gateway</td><td><span class="tag tag--green">Success</span></td><td class="num">42 s</td><td>Jane</td><td><div class="row-actions"><button class="icon-button icon-button--sm" aria-label="More"><i class="ph-dots-three-bold"></i></button></div></td></tr>
+    <tr><td class="cell-select"><label class="checkbox"><input type="checkbox" aria-label="Select row"><span class="box"></span></label></td><td>web-app</td><td><span class="tag tag--yellow">Running</span></td><td class="num">118 s</td><td>Mika</td><td><div class="row-actions"><button class="icon-button icon-button--sm" aria-label="More"><i class="ph-dots-three-bold"></i></button></div></td></tr>
+    <tr><td class="cell-select"><label class="checkbox"><input type="checkbox" aria-label="Select row"><span class="box"></span></label></td><td>billing</td><td><span class="tag tag--red">Failed</span></td><td class="num">9 s</td><td>Tariq</td><td><div class="row-actions"><button class="icon-button icon-button--sm" aria-label="More"><i class="ph-dots-three-bold"></i></button></div></td></tr>
+    <tr><td class="cell-select"><label class="checkbox"><input type="checkbox" aria-label="Select row"><span class="box"></span></label></td><td>auth-service</td><td><span class="tag tag--green">Success</span></td><td class="num">67 s</td><td>Ana</td><td><div class="row-actions"><button class="icon-button icon-button--sm" aria-label="More"><i class="ph-dots-three-bold"></i></button></div></td></tr>
+  </tbody></table><div class="data-table-empty" hidden>No results match your filter.</div></div>
+  <div class="table-footer"><div class="pagination" data-pagination data-total="40" data-size="10"><span data-range-label></span><div class="pagination-pages"></div></div></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Density & zebra</h2>
+    <div class="doc-demo ">
+<div class="stack"><div class="table-wrap"><table class="data-table data-table--compact data-table--zebra"><thead><tr><th>Compact + zebra</th><th class="num">Requests</th></tr></thead><tbody><tr><td>/api/users</td><td class="num">12,480</td></tr><tr><td>/api/projects</td><td class="num">8,102</td></tr><tr><td>/api/billing</td><td class="num">1,244</td></tr></tbody></table></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">[data-table]</code></td><td>Wrapper enabling sort, select, filter</td></tr><tr><td><code class="code-inline">th.sortable (+ .num)</code></td><td>Sortable column; .num sorts numerically</td></tr><tr><td><code class="code-inline">.data-table--compact / --tall / --zebra</code></td><td>Density and striping</td></tr><tr><td><code class="code-inline">.table-batch</code></td><td>Toolbar shown when rows are selected</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="contained-list.html"><i class="ph-arrow-left-bold"></i> Contained list</a></span><span><a class="link" href="list.html">List <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Search</li>
+    </ol></nav>
+    <h1>Search</h1>
+    <p>Filters or finds content. This is the dashboard’s search field, extended with clear, sizes and live results.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo ">
+<form class="search" role="search" onsubmit="return false">
+  <input type="text" placeholder="Search" aria-label="Search"><button type="submit" aria-label="Submit search"><i class="ph-magnifying-glass-bold"></i></button>
+  <button type="button" class="search-clear" aria-label="Clear"><i class="ph-x-bold"></i></button>
+</form>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Sizes</h2>
+    <div class="doc-demo ">
+<div class="stack">
+  <div class="search search--sm"><input type="text" placeholder="Small" aria-label="Small"><button type="submit" aria-label="Search"><i class="ph-magnifying-glass-bold"></i></button></div>
+  <div class="search"><input type="text" placeholder="Default" aria-label="Default"><button type="submit" aria-label="Search"><i class="ph-magnifying-glass-bold"></i></button></div>
+  <div class="search search--lg"><input type="text" placeholder="Large" aria-label="Large"><button type="submit" aria-label="Search"><i class="ph-magnifying-glass-bold"></i></button></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>With results</h2><p>Static example of a results panel.</p>
+    <div class="doc-demo doc-demo--tall">
+<div class="search" style="margin-bottom:11rem">
+  <input type="text" value="git" aria-label="Search"><button type="submit" aria-label="Search"><i class="ph-magnifying-glass-bold"></i></button>
+  <div class="search-results"><div class="menu-label">Integrations</div>
+    <a class="menu-item" href="#"><i class="ph-github-logo-bold"></i>GitHub</a>
+    <a class="menu-item" href="#"><i class="ph-git-branch-bold"></i>GitLab</a>
+    <a class="menu-item" href="#"><i class="ph-git-merge-bold"></i>Gitea</a></div>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="radio-button.html"><i class="ph-arrow-left-bold"></i> Radio button</a></span><span><a class="link" href="select.html">Select <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

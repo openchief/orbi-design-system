@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slider · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Slider</li>
+    </ol></nav>
+    <h1>Slider</h1>
+    <p>Selects a value or quantity from a continuous range.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo ">
+<div class="slider"><div class="slider-head"><label for="sl1">Volume</label><span class="slider-value"></span></div>
+  <div class="slider-row"><span class="slider-bound">0</span><input id="sl1" type="range" min="0" max="100" value="40" data-unit="%"><span class="slider-bound">100</span></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Stepped & disabled</h2>
+    <div class="doc-demo ">
+<div class="stack-lg">
+  <div class="slider"><div class="slider-head"><label for="sl2">Team size</label><span class="slider-value"></span></div>
+  <div class="slider-row"><span class="slider-bound">5</span><input id="sl2" type="range" min="5" max="50" step="5" value="20"><span class="slider-bound">50</span></div></div>
+  <div class="slider"><div class="slider-head"><label for="sl3">Disabled</label><span class="slider-value"></span></div>
+  <div class="slider-row"><input id="sl3" type="range" min="0" max="10" value="3" disabled></div></div>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="select.html"><i class="ph-arrow-left-bold"></i> Select</a></span><span><a class="link" href="text-input.html">Text input <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

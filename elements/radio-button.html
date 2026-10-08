@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radio button · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Radio button</li>
+    </ol></nav>
+    <h1>Radio button</h1>
+    <p>Lets users choose exactly one option from a set.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Vertical group</h2>
+    <div class="doc-demo ">
+<fieldset class="choice-group"><legend>Billing cycle</legend>
+  <label class="radio"><input type="radio" name="r1" checked><span class="dot"></span><span class="label-text">Monthly</span></label>
+  <label class="radio"><input type="radio" name="r1"><span class="dot"></span><span class="label-text">Yearly<small>Save 20%</small></span></label>
+  <label class="radio"><input type="radio" name="r1" disabled><span class="dot"></span><span class="label-text">Lifetime</span></label>
+</fieldset>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Horizontal group</h2>
+    <div class="doc-demo ">
+<fieldset class="choice-group choice-group--inline"><legend>Theme</legend>
+  <label class="radio"><input type="radio" name="r2" checked><span class="dot"></span><span class="label-text">Light</span></label>
+  <label class="radio"><input type="radio" name="r2"><span class="dot"></span><span class="label-text">Dark</span></label>
+  <label class="radio"><input type="radio" name="r2"><span class="dot"></span><span class="label-text">System</span></label>
+</fieldset>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="number-input.html"><i class="ph-arrow-left-bold"></i> Number input</a></span><span><a class="link" href="search.html">Search <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

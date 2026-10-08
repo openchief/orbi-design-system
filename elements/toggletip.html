@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toggletip · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#overlays">Overlays</a></li>
+      <li aria-current="page">Toggletip</li>
+    </ol></nav>
+    <h1>Toggletip</h1>
+    <p>A click-activated tip for supplementary information that can contain interactive content. Unlike a tooltip, it stays open until dismissed.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="row"><span class="field-label" style="display:inline">API key</span>
+  <span class="popover-wrap"><button class="toggletip-btn" type="button" data-trigger aria-label="More info" aria-expanded="false">i</button>
+    <span class="popover toggletip"><span class="popover-title">Where do I find this?</span><p>Open Settings → API and copy the secret key. <a class="link link--inline link--sm" href="#">Learn more</a></p></span></span></div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="popover.html"><i class="ph-arrow-left-bold"></i> Popover</a></span><span><a class="link" href="tooltip.html">Tooltip <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

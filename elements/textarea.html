@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Textarea · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Textarea</li>
+    </ol></nav>
+    <h1>Textarea</h1>
+    <p>Multi-line text entry. Shares all states with the text input. (Extra component.)</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo ">
+<div class="field"><label class="field-label" for="ta1">Description</label><textarea class="textarea" id="ta1" placeholder="Describe your integration…"></textarea><span class="field-helper">Up to 240 characters.</span></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Invalid & disabled</h2>
+    <div class="doc-demo ">
+<div class="grid-2">
+  <div class="field is-invalid"><label class="field-label" for="ta2">Notes</label><textarea class="textarea" id="ta2"></textarea><span class="field-error"><i class="ph-warning-circle-bold"></i><span>This field is required.</span></span></div>
+  <div class="field"><label class="field-label" for="ta3">Disabled</label><textarea class="textarea" id="ta3" disabled>Not editable</textarea></div>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="text-input.html"><i class="ph-arrow-left-bold"></i> Text input</a></span><span><a class="link" href="toggle.html">Toggle <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Number input · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Number input</li>
+    </ol></nav>
+    <h1>Number input</h1>
+    <p>Numeric entry with stepper buttons that respect min, max and step.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo ">
+<div class="field"><label class="field-label" for="n1">Seats</label>
+  <div class="number-input"><button type="button" data-step="-1" aria-label="Decrease"><i class="ph-minus-bold"></i></button><input id="n1" type="number" value="5" min="0" max="10" step="1"><button type="button" data-step="1" aria-label="Increase"><i class="ph-plus-bold"></i></button></div>
+  <span class="field-helper">Between 0 and 10.</span></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Step & decimals</h2>
+    <div class="doc-demo ">
+<div class="field"><label class="field-label" for="n2">Discount (%)</label>
+  <div class="number-input"><button type="button" data-step="-1" aria-label="Decrease"><i class="ph-minus-bold"></i></button><input id="n2" type="number" value="12.5" min="0" max="100" step="0.5"><button type="button" data-step="1" aria-label="Increase"><i class="ph-plus-bold"></i></button></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">.number-input</code></td><td>Container with two <code class="code-inline">button[data-step]</code> and an input</td></tr><tr><td><code class="code-inline">data-step="-1|1"</code></td><td>Direction of each stepper</td></tr><tr><td><code class="code-inline">min / max / step</code></td><td>Standard input attributes — buttons disable at limits</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="form.html"><i class="ph-arrow-left-bold"></i> Form</a></span><span><a class="link" href="radio-button.html">Radio button <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tree view · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#navigation">Navigation</a></li>
+      <li aria-current="page">Tree view</li>
+    </ol></nav>
+    <h1>Tree view</h1>
+    <p>Displays hierarchical data as expandable, selectable nodes.</p>
+  </div>
+  <section class="doc-section">
+    <h2>File tree</h2>
+    <div class="doc-demo ">
+<div class="row" style="margin-bottom:1rem"><button class="button button--sm" data-tree-all="expand" data-tree="#tree1" type="button"><span>Expand all</span></button><button class="button button--sm" data-tree-all="collapse" data-tree="#tree1" type="button"><span>Collapse all</span></button></div>
+<div class="tree" id="tree1" role="tree" style="max-width:320px"><ul>
+  <li aria-expanded="true"><button class="tree-node" type="button"><i class="ph-caret-right-bold tree-caret"></i><i class="ph-folder-open-bold"></i>src</button>
+    <ul>
+      <li aria-expanded="true"><button class="tree-node" type="button"><i class="ph-caret-right-bold tree-caret"></i><i class="ph-folder-bold"></i>components</button>
+        <ul><li><button class="tree-node" type="button"><i class="ph-caret-right-bold tree-caret"></i><i class="ph-file-code-bold"></i>Button.js</button></li><li><button class="tree-node" type="button"><i class="ph-caret-right-bold tree-caret"></i><i class="ph-file-code-bold"></i>Modal.js</button></li></ul></li>
+      <li aria-expanded="false"><button class="tree-node" type="button"><i class="ph-caret-right-bold tree-caret"></i><i class="ph-folder-bold"></i>styles</button>
+        <ul><li><button class="tree-node" type="button"><i class="ph-caret-right-bold tree-caret"></i><i class="ph-file-css-bold"></i>main.css</button></li></ul></li>
+      <li><button class="tree-node" type="button"><i class="ph-caret-right-bold tree-caret"></i><i class="ph-file-html-bold"></i>index.html</button></li>
+    </ul></li>
+  <li><button class="tree-node" type="button"><i class="ph-caret-right-bold tree-caret"></i><i class="ph-file-text-bold"></i>README.md</button></li>
+</ul></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">li[aria-expanded]</code></td><td>Parent node — "true" or "false"</td></tr><tr><td><code class="code-inline">.tree-node</code></td><td>Interactive row</td></tr><tr><td><code class="code-inline">.is-selected</code></td><td>Selected node</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="tabs.html"><i class="ph-arrow-left-bold"></i> Tabs</a></span><span><a class="link" href="ai-label.html">AI label <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modal · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#overlays">Overlays</a></li>
+      <li aria-current="page">Modal</li>
+    </ol></nav>
+    <h1>Modal</h1>
+    <p>A focused dialog that interrupts the flow to request input or confirm an action. Close with Esc, the backdrop, or a button.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Standard</h2>
+    <div class="doc-demo ">
+<button class="button button--primary" type="button" data-modal-open="m1"><span>Open modal</span></button>
+<div class="overlay" id="m1" role="dialog" aria-modal="true" aria-labelledby="m1t"><div class="modal">
+  <div class="modal-header"><div><h2 id="m1t">Request integration</h2><p>Tell us which tool you’d like to connect.</p></div><button class="icon-button icon-button--sm" data-modal-close aria-label="Close"><i class="ph-x-bold"></i></button></div>
+  <div class="modal-body stack"><div class="field" style="max-width:none"><label class="field-label" for="m1a">Tool name</label><input class="input" id="m1a" placeholder="e.g. Linear"></div><div class="field" style="max-width:none"><label class="field-label" for="m1b">Why do you need it?</label><textarea class="textarea" id="m1b"></textarea></div></div>
+  <div class="modal-footer"><button class="button" data-modal-close type="button"><span>Cancel</span></button><button class="button button--primary" data-modal-close type="button"><span>Submit</span></button></div>
+</div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Destructive confirmation</h2>
+    <div class="doc-demo ">
+<button class="button button--danger-outline" type="button" data-modal-open="m2"><i class="ph-trash-bold"></i><span>Delete project</span></button>
+<div class="overlay" id="m2" role="alertdialog" aria-modal="true" aria-labelledby="m2t"><div class="modal modal--sm">
+  <div class="modal-header"><div><span class="modal-icon"><i class="ph-warning-bold"></i></span><h2 id="m2t">Delete this project?</h2><p>This permanently removes all data and cannot be undone.</p></div></div>
+  <div class="modal-footer"><button class="button" data-modal-close type="button"><span>Keep</span></button><button class="button button--danger" data-modal-close type="button"><span>Delete</span></button></div>
+</div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Large with scrolling body</h2>
+    <div class="doc-demo ">
+<button class="button" type="button" data-modal-open="m3"><span>Open large modal</span></button>
+<div class="overlay" id="m3" role="dialog" aria-modal="true" aria-labelledby="m3t"><div class="modal modal--lg">
+  <div class="modal-header"><h2 id="m3t">Terms of service</h2><button class="icon-button icon-button--sm" data-modal-close aria-label="Close"><i class="ph-x-bold"></i></button></div>
+  <div class="modal-body stack"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+  <div class="modal-footer"><button class="button button--primary" data-modal-close type="button"><span>I agree</span></button></div>
+</div></div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="menu.html"><i class="ph-arrow-left-bold"></i> Menu</a></span><span><a class="link" href="popover.html">Popover <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

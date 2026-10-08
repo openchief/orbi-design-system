@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contained list · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#content">Content</a></li>
+      <li aria-current="page">Contained list</li>
+    </ol></nav>
+    <h1>Contained list</h1>
+    <p>A card-like list with a header, optional search and selectable rows.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Selectable</h2>
+    <div class="doc-demo ">
+<div class="contained-list" style="max-width:460px">
+  <div class="contained-list-head"><h3>Workspaces</h3><div class="search search--sm"><input type="text" placeholder="Search" aria-label="Search workspaces"><button type="submit" aria-label="Search"><i class="ph-magnifying-glass-bold"></i></button></div></div>
+  <button class="contained-list-item is-selected" data-select-one type="button"><span class="avatar" style="width:32px;height:32px;font-size:.7rem">OR</span><span class="grow">Orbi<small>12 members</small></span><span class="tag tag--green">Active</span></button>
+  <button class="contained-list-item" data-select-one type="button"><span class="avatar" style="width:32px;height:32px;font-size:.7rem">DS</span><span class="grow">Design System<small>5 members</small></span></button>
+  <button class="contained-list-item" data-select-one type="button"><span class="avatar" style="width:32px;height:32px;font-size:.7rem">MK</span><span class="grow">Marketing<small>8 members</small></span></button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Static with actions</h2>
+    <div class="doc-demo ">
+<div class="contained-list" style="max-width:460px">
+  <div class="contained-list-head"><h3>Recent files</h3><button class="button button--sm" type="button"><i class="ph-plus-bold"></i><span>Add</span></button></div>
+  <div class="contained-list-item"><i class="ph-file-text-bold"></i><span class="grow">Roadmap.pdf</span><button class="icon-button icon-button--sm" aria-label="Download"><i class="ph-download-simple-bold"></i></button></div>
+  <div class="contained-list-item"><i class="ph-file-text-bold"></i><span class="grow">Budget.xlsx</span><button class="icon-button icon-button--sm" aria-label="Download"><i class="ph-download-simple-bold"></i></button></div>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="code-snippet.html"><i class="ph-arrow-left-bold"></i> Code snippet</a></span><span><a class="link" href="data-table.html">Data table <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

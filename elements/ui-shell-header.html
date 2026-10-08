@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UI shell header · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#ui-shell">UI shell</a></li>
+      <li aria-current="page">UI shell header</li>
+    </ol></nav>
+    <h1>UI shell header</h1>
+    <p>The global application header: logo, primary navigation, utility actions and a responsive menu button. Below 900px it collapses to a menu.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2><p>Resize the window to see the responsive behaviour.</p>
+    <div class="doc-demo doc-demo--pad0">
+<header class="shell-header"><div class="shell-header-content">
+  <a class="shell-logo" href="#"><span class="shell-logo-mark"></span><span>Orbi</span></a>
+  <div class="shell-nav">
+    <nav class="shell-nav-links" aria-label="Primary"><a href="#" data-nav-active>Home</a><a href="#" class="active" data-nav-active>Dashboard</a><a href="#" data-nav-active>Projects</a><a href="#" data-nav-active>Tasks</a><a href="#" data-nav-active>Reporting</a><a href="#" data-nav-active>Users</a></nav>
+    <div class="shell-actions"><a href="#" class="button"><i class="ph-lightning-bold"></i><span>Upgrade now</span></a><a href="#" class="icon-button" aria-label="Settings"><i class="ph-gear-bold"></i></a><a href="#" class="icon-button shell-badge" aria-label="Notifications"><i class="ph-bell-bold"></i></a><a href="#" class="avatar">JA</a></div>
+  </div>
+  <a href="#" class="button shell-menu-btn"><i class="ph-list-bold"></i><span>Menu</span></a>
+</div></header>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>With search</h2>
+    <div class="doc-demo doc-demo--pad0">
+<header class="shell-header"><div class="shell-header-content">
+  <a class="shell-logo" href="#"><span class="shell-logo-mark"></span><span>Orbi</span></a>
+  <div class="shell-nav"><div class="search"><input type="text" placeholder="Search anything" aria-label="Search"><button type="submit" aria-label="Search"><i class="ph-magnifying-glass-bold"></i></button></div>
+  <div class="shell-actions"><a href="#" class="icon-button" aria-label="Help"><i class="ph-question-bold"></i></a><a href="#" class="icon-button shell-badge" aria-label="Notifications"><i class="ph-bell-bold"></i></a><a href="#" class="avatar">JA</a></div></div>
+  <a href="#" class="button shell-menu-btn"><i class="ph-list-bold"></i><span>Menu</span></a>
+</div></header>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">.shell-header</code></td><td>80px bar, white with a soft bottom border; add <code class="code-inline">--sticky</code> to pin</td></tr><tr><td><code class="code-inline">.shell-nav-links a.active</code></td><td>Current page with indicator</td></tr><tr><td><code class="code-inline">.shell-badge</code></td><td>Adds a notification dot</td></tr><tr><td><code class="code-inline">.shell-menu-btn</code></td><td>Visible only on narrow screens</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="tooltip.html"><i class="ph-arrow-left-bold"></i> Tooltip</a></span><span><a class="link" href="ui-shell-left-panel.html">UI shell left panel <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

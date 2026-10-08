@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu buttons · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#actions">Actions</a></li>
+      <li aria-current="page">Menu buttons</li>
+    </ol></nav>
+    <h1>Menu buttons</h1>
+    <p>A button that opens a menu of related actions, optionally split into a primary action plus a menu.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Menu button</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="menu-wrap">
+  <button class="button" type="button" data-trigger aria-haspopup="menu" aria-expanded="false"><span>Actions</span><i class="ph-caret-down-bold"></i></button>
+  <div class="menu" role="menu">
+    <button class="menu-item" role="menuitem" type="button"><i class="ph-pencil-simple-bold"></i>Edit</button>
+    <button class="menu-item" role="menuitem" type="button"><i class="ph-copy-bold"></i>Duplicate</button>
+    <button class="menu-item" role="menuitem" type="button"><i class="ph-share-network-bold"></i>Share</button>
+    <div class="menu-divider"></div>
+    <button class="menu-item menu-item--danger" role="menuitem" type="button"><i class="ph-trash-bold"></i>Delete</button>
+  </div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Primary</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="menu-wrap">
+  <button class="button button--primary" type="button" data-trigger aria-haspopup="menu" aria-expanded="false"><span>New</span><i class="ph-caret-down-bold"></i></button>
+  <div class="menu" role="menu">
+    <button class="menu-item" role="menuitem" type="button"><i class="ph-file-bold"></i>Document</button>
+    <button class="menu-item" role="menuitem" type="button"><i class="ph-folder-bold"></i>Folder</button>
+    <button class="menu-item" role="menuitem" type="button"><i class="ph-upload-simple-bold"></i>Upload</button>
+  </div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Split button</h2><p>Primary action on the left; secondary actions in the menu.</p>
+    <div class="doc-demo doc-demo--tall">
+<div class="menu-wrap">
+  <div class="button-group">
+    <button class="button button--primary" type="button"><span>Save</span></button>
+    <button class="button button--primary" type="button" data-trigger aria-haspopup="menu" aria-expanded="false" aria-label="More save options" style="border-left-color:rgba(255,255,255,.4)"><i class="ph-caret-down-bold"></i></button>
+  </div>
+  <div class="menu" role="menu">
+    <button class="menu-item" role="menuitem" type="button">Save as draft</button>
+    <button class="menu-item" role="menuitem" type="button">Save and publish</button>
+    <button class="menu-item" role="menuitem" type="button">Save as template</button>
+  </div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Overflow icon button</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="menu-wrap">
+  <button class="icon-button" type="button" data-trigger aria-label="More options" aria-haspopup="menu" aria-expanded="false"><i class="ph-dots-three-vertical-bold"></i></button>
+  <div class="menu menu--right" role="menu">
+    <button class="menu-item" role="menuitem" type="button">View details</button>
+    <button class="menu-item" role="menuitem" type="button">Archive</button>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="link.html"><i class="ph-arrow-left-bold"></i> Link</a></span><span><a class="link" href="checkbox.html">Checkbox <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

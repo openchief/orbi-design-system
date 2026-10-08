@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popover · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#overlays">Overlays</a></li>
+      <li aria-current="page">Popover</li>
+    </ol></nav>
+    <h1>Popover</h1>
+    <p>A floating panel anchored to a trigger, holding rich content and actions.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Bottom (default)</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="popover-wrap"><button class="button" type="button" data-trigger aria-expanded="false"><span>Share</span><i class="ph-caret-down-bold"></i></button>
+  <div class="popover"><div class="popover-title">Share this project</div><p>Anyone with the link can view.</p>
+    <div class="input-wrap mt-4"><input class="input input--sm" value="orbi.dev/p/482" readonly aria-label="Link"></div>
+    <div class="popover-actions"><button class="button button--sm" type="button"><span>Cancel</span></button><button class="button button--primary button--sm" type="button"><span>Copy link</span></button></div></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Top, right aligned</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="row" style="justify-content:flex-end;padding-top:11rem"><div class="popover-wrap"><button class="button" type="button" data-trigger aria-expanded="false"><i class="ph-bell-bold"></i><span>Alerts</span></button>
+  <div class="popover popover--top popover--right"><div class="popover-title">2 new alerts</div><p>Deploy #1482 finished. Billing sync failed.</p></div></div></div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="modal.html"><i class="ph-arrow-left-bold"></i> Modal</a></span><span><a class="link" href="toggletip.html">Toggletip <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

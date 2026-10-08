@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Form</li>
+    </ol></nav>
+    <h1>Form</h1>
+    <p>Composes inputs, selects, choices and actions into a validated form. Submit it empty to see the validation states.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Sign-up form</h2>
+    <div class="doc-demo ">
+<form class="form" data-validate>
+  <fieldset class="fieldset"><legend>Create your account</legend>
+    <div class="form-row">
+      <div class="field"><label class="field-label" for="f1">First name</label><input class="input" id="f1" required><span class="field-error"><i class="ph-warning-circle-bold"></i><span></span></span></div>
+      <div class="field"><label class="field-label" for="f2">Last name</label><input class="input" id="f2" required><span class="field-error"><i class="ph-warning-circle-bold"></i><span></span></span></div>
+    </div>
+    <div class="field"><label class="field-label" for="f3">Work email</label><input class="input" id="f3" type="email" required placeholder="you@company.com"><span class="field-helper">We’ll send a confirmation link.</span><span class="field-error"><i class="ph-warning-circle-bold"></i><span></span></span></div>
+    <div class="field"><label class="field-label" for="f4">Team size</label><div class="select"><select id="f4" required><option value="">Select…</option><option>1–10</option><option>11–50</option><option>51+</option></select></div><span class="field-error"><i class="ph-warning-circle-bold"></i><span></span></span></div>
+  </fieldset>
+  <label class="checkbox"><input type="checkbox"><span class="box"></span><span class="label-text">Send me product updates</span></label>
+  <div class="notification notification--success notification--tinted" data-form-result hidden><i class="ph-check-circle-bold"></i><div class="notification-content"><div class="notification-title">Looks good</div><div class="notification-text">All fields are valid.</div></div></div>
+  <div class="form-actions"><button class="button" type="reset"><span>Cancel</span></button><button class="button button--primary" type="submit"><span>Create account</span></button></div>
+</form>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">form[data-validate]</code></td><td>Enables JS validation using native constraints</td></tr><tr><td><code class="code-inline">.fieldset</code></td><td>Grouped fields with a legend</td></tr><tr><td><code class="code-inline">.form-row</code></td><td>Responsive multi-column row</td></tr><tr><td><code class="code-inline">.form-actions</code></td><td>Right-aligned footer actions</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="file-uploader.html"><i class="ph-arrow-left-bold"></i> File uploader</a></span><span><a class="link" href="number-input.html">Number input <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

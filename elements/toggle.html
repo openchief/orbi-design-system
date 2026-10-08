@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toggle · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Toggle</li>
+    </ol></nav>
+    <h1>Toggle</h1>
+    <p>Switches a single setting on or off immediately. The component is lifted directly from the dashboard’s integration cards.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo ">
+<div class="row" style="gap:2rem">
+  <label class="toggle"><input type="checkbox" checked aria-label="On"><span></span></label>
+  <label class="toggle"><input type="checkbox" aria-label="Off"><span></span></label>
+  <label class="toggle"><input type="checkbox" disabled aria-label="Disabled"><span></span></label>
+  <label class="toggle toggle--sm"><input type="checkbox" checked aria-label="Small"><span></span></label>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>With label</h2>
+    <div class="doc-demo ">
+<div class="stack">
+  <label class="toggle-field"><span class="toggle"><input type="checkbox" checked><span></span></span><span class="label-text">Email notifications</span></label>
+  <label class="toggle-field"><span class="toggle"><input type="checkbox"><span></span></span><span class="label-text">Weekly digest</span></label>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="textarea.html"><i class="ph-arrow-left-bold"></i> Textarea</a></span><span><a class="link" href="breadcrumb.html">Breadcrumb <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

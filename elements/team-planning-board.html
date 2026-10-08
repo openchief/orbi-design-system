@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team planning board · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#boards">Boards</a></li>
+      <li aria-current="page">Team planning board</li>
+    </ol></nav>
+    <h1>Team planning board</h1>
+    <p>A monday.com-style planning table: groups of work items with owner, status, priority and timeline.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Board</h2>
+    <p class="mb-4">Everything is editable. Click an item name, group name or column header to rename it; click an owner, status, priority or timeline to change it; use ▸ to open subitems and the row buttons to add a subitem or delete (click twice to confirm). Groups can be recoloured, deleted or added.</p>
+    <div class="doc-demo">
+<div class="pboard" data-planning data-start="2026-10-05" data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]">
+  <div class="pgroup" style="--g:#579bfc">
+    <div class="pgroup-head"><button class="pgroup-toggle" type="button" aria-expanded="true" aria-label="Toggle group"><i class="ph-caret-down-bold"></i></button><button type="button" class="pgroup-color" data-group-color aria-label="Group colour"></button><h3 class="pgroup-title">This week</h3><span class="pgroup-count"></span><button type="button" class="row-btn row-btn--danger pgroup-del" data-delete-group aria-label="Delete group"><i class="ph-trash-bold"></i></button></div>
+    <div class="ptable">
+      <div class="prow prow--head"><span>Item</span><span>Owner</span><span>Status</span><span>Priority</span><span>Timeline</span></div>
+      <div class="pitem">
+        <div class="prow" data-row data-owner="Alex Morgan" data-from="2026-10-08" data-to="2026-10-12"><span class="pcell-name"><button type="button" class="prow-expand" aria-expanded="false" aria-label="Show subitems"><i class="ph-caret-right-bold"></i></button><span class="pname">Finalise Q4 roadmap</span><span class="psub-count"></span><span class="prow-actions"><button type="button" class="row-btn" data-add-sub aria-label="Add subitem"><i class="ph-plus-bold"></i></button><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Alex Morgan"><span class="avatar" title="Alex Morgan">AM</span></button></span><span><button type="button" class="status" data-pick="status" data-status="working">Working on it</button></span><span><button type="button" class="status" data-pick="priority" data-status="high">High</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 3; --e: 8;"><i></i><span>Oct 8 – 12</span></button></span></div>
+        <div class="psubs" hidden>
+        <div class="prow prow--sub" data-subrow data-owner="Jamie Kim" data-from="2026-10-08" data-to="2026-10-09"><span class="pcell-name"><span class="prow-spacer"></span><span class="pname">Collect team input</span><span class="prow-actions"><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Jamie Kim"><span class="avatar" title="Jamie Kim">JK</span></button></span><span><button type="button" class="status" data-pick="status" data-status="done">Done</button></span><span><button type="button" class="status" data-pick="priority" data-status="medium">Medium</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 3; --e: 5;"><i></i><span>Oct 8 – 9</span></button></span></div>
+        <div class="prow prow--sub" data-subrow data-owner="Alex Morgan" data-from="2026-10-09" data-to="2026-10-11"><span class="pcell-name"><span class="prow-spacer"></span><span class="pname">Draft milestones</span><span class="prow-actions"><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Alex Morgan"><span class="avatar" title="Alex Morgan">AM</span></button></span><span><button type="button" class="status" data-pick="status" data-status="working">Working on it</button></span><span><button type="button" class="status" data-pick="priority" data-status="high">High</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 4; --e: 7;"><i></i><span>Oct 9 – 11</span></button></span></div>
+        <div class="psubs-add"><button type="button" data-add-subitem><i class="ph-plus-bold"></i><span>Add subitem</span></button></div>
+        </div>
+      </div>
+      <div class="pitem">
+        <div class="prow" data-row data-owner="Jamie Kim" data-from="2026-10-08" data-to="2026-10-10"><span class="pcell-name"><button type="button" class="prow-expand" aria-expanded="false" aria-label="Show subitems"><i class="ph-caret-right-bold"></i></button><span class="pname">Customer interview synthesis</span><span class="psub-count"></span><span class="prow-actions"><button type="button" class="row-btn" data-add-sub aria-label="Add subitem"><i class="ph-plus-bold"></i></button><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Jamie Kim"><span class="avatar" title="Jamie Kim">JK</span></button></span><span><button type="button" class="status" data-pick="status" data-status="done">Done</button></span><span><button type="button" class="status" data-pick="priority" data-status="medium">Medium</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 3; --e: 6;"><i></i><span>Oct 8 – 10</span></button></span></div>
+        <div class="psubs" hidden>
+        <div class="psubs-add"><button type="button" data-add-subitem><i class="ph-plus-bold"></i><span>Add subitem</span></button></div>
+        </div>
+      </div>
+      <div class="pitem">
+        <div class="prow" data-row data-owner="Sam Rivera" data-from="2026-10-09" data-to="2026-10-14"><span class="pcell-name"><button type="button" class="prow-expand" aria-expanded="false" aria-label="Show subitems"><i class="ph-caret-right-bold"></i></button><span class="pname">Vendor security review</span><span class="psub-count"></span><span class="prow-actions"><button type="button" class="row-btn" data-add-sub aria-label="Add subitem"><i class="ph-plus-bold"></i></button><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Sam Rivera"><span class="avatar" title="Sam Rivera">SR</span></button></span><span><button type="button" class="status" data-pick="status" data-status="stuck">Stuck</button></span><span><button type="button" class="status" data-pick="priority" data-status="critical">Critical</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 4; --e: 10;"><i></i><span>Oct 9 – 14</span></button></span></div>
+        <div class="psubs" hidden>
+        <div class="prow prow--sub" data-subrow data-owner="Sam Rivera" data-from="2026-10-09" data-to="2026-10-10"><span class="pcell-name"><span class="prow-spacer"></span><span class="pname">Request questionnaire</span><span class="prow-actions"><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Sam Rivera"><span class="avatar" title="Sam Rivera">SR</span></button></span><span><button type="button" class="status" data-pick="status" data-status="done">Done</button></span><span><button type="button" class="status" data-pick="priority" data-status="low">Low</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 4; --e: 6;"><i></i><span>Oct 9 – 10</span></button></span></div>
+        <div class="psubs-add"><button type="button" data-add-subitem><i class="ph-plus-bold"></i><span>Add subitem</span></button></div>
+        </div>
+      </div>
+    </div>
+    <div class="pgroup-add"><button type="button" data-planning-add><i class="ph-plus-bold"></i><span>Add item</span></button></div>
+    <div class="pgroup-summary" aria-label="Status summary"></div>
+  </div>
+  <div class="pgroup" style="--g:#a25ddc">
+    <div class="pgroup-head"><button class="pgroup-toggle" type="button" aria-expanded="true" aria-label="Toggle group"><i class="ph-caret-down-bold"></i></button><button type="button" class="pgroup-color" data-group-color aria-label="Group colour"></button><h3 class="pgroup-title">Next week</h3><span class="pgroup-count"></span><button type="button" class="row-btn row-btn--danger pgroup-del" data-delete-group aria-label="Delete group"><i class="ph-trash-bold"></i></button></div>
+    <div class="ptable">
+      <div class="prow prow--head"><span>Item</span><span>Owner</span><span>Status</span><span>Priority</span><span>Timeline</span></div>
+      <div class="pitem">
+        <div class="prow" data-row data-owner="Lee Taylor" data-from="2026-10-16" data-to="2026-10-21"><span class="pcell-name"><button type="button" class="prow-expand" aria-expanded="false" aria-label="Show subitems"><i class="ph-caret-right-bold"></i></button><span class="pname">Design system audit</span><span class="psub-count"></span><span class="prow-actions"><button type="button" class="row-btn" data-add-sub aria-label="Add subitem"><i class="ph-plus-bold"></i></button><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Lee Taylor"><span class="avatar" title="Lee Taylor">LT</span></button></span><span><button type="button" class="status" data-pick="status" data-status="not-started">Not started</button></span><span><button type="button" class="status" data-pick="priority" data-status="medium">Medium</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 11; --e: 17;"><i></i><span>Oct 16 – 21</span></button></span></div>
+        <div class="psubs" hidden>
+        <div class="psubs-add"><button type="button" data-add-subitem><i class="ph-plus-bold"></i><span>Add subitem</span></button></div>
+        </div>
+      </div>
+      <div class="pitem">
+        <div class="prow" data-row data-owner="Alex Morgan" data-from="2026-10-18" data-to="2026-10-19"><span class="pcell-name"><button type="button" class="prow-expand" aria-expanded="false" aria-label="Show subitems"><i class="ph-caret-right-bold"></i></button><span class="pname">Hiring panel prep</span><span class="psub-count"></span><span class="prow-actions"><button type="button" class="row-btn" data-add-sub aria-label="Add subitem"><i class="ph-plus-bold"></i></button><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Alex Morgan"><span class="avatar" title="Alex Morgan">AM</span></button></span><span><button type="button" class="status" data-pick="status" data-status="not-started">Not started</button></span><span><button type="button" class="status" data-pick="priority" data-status="low">Low</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 13; --e: 15;"><i></i><span>Oct 18 – 19</span></button></span></div>
+        <div class="psubs" hidden>
+        <div class="psubs-add"><button type="button" data-add-subitem><i class="ph-plus-bold"></i><span>Add subitem</span></button></div>
+        </div>
+      </div>
+    </div>
+    <div class="pgroup-add"><button type="button" data-planning-add><i class="ph-plus-bold"></i><span>Add item</span></button></div>
+    <div class="pgroup-summary" aria-label="Status summary"></div>
+  </div>
+  <div class="pgroup" style="--g:#a1a6bd">
+    <div class="pgroup-head"><button class="pgroup-toggle" type="button" aria-expanded="true" aria-label="Toggle group"><i class="ph-caret-down-bold"></i></button><button type="button" class="pgroup-color" data-group-color aria-label="Group colour"></button><h3 class="pgroup-title">Backlog</h3><span class="pgroup-count"></span><button type="button" class="row-btn row-btn--danger pgroup-del" data-delete-group aria-label="Delete group"><i class="ph-trash-bold"></i></button></div>
+    <div class="ptable">
+      <div class="prow prow--head"><span>Item</span><span>Owner</span><span>Status</span><span>Priority</span><span>Timeline</span></div>
+      <div class="pitem">
+        <div class="prow" data-row data-owner="" data-from="2026-10-24" data-to="2026-11-01"><span class="pcell-name"><button type="button" class="prow-expand" aria-expanded="false" aria-label="Show subitems"><i class="ph-caret-right-bold"></i></button><span class="pname">Revisit pricing page copy</span><span class="psub-count"></span><span class="prow-actions"><button type="button" class="row-btn" data-add-sub aria-label="Add subitem"><i class="ph-plus-bold"></i></button><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title=""><span class="avatar avatar--empty" title="Unassigned"><i class="ph-user-plus-bold"></i></span></button></span><span><button type="button" class="status" data-pick="status" data-status="not-started">Not started</button></span><span><button type="button" class="status" data-pick="priority" data-status="low">Low</button></span><span><button type="button" class="ptimeline is-late" data-timeline-pick aria-label="Edit timeline" style="--s: 19; --e: 28;"><i></i><span>Oct 24 – Nov 1</span></button></span></div>
+        <div class="psubs" hidden>
+        <div class="psubs-add"><button type="button" data-add-subitem><i class="ph-plus-bold"></i><span>Add subitem</span></button></div>
+        </div>
+      </div>
+    </div>
+    <div class="pgroup-add"><button type="button" data-planning-add><i class="ph-plus-bold"></i><span>Add item</span></button></div>
+    <div class="pgroup-summary" aria-label="Status summary"></div>
+  </div>
+  <button type="button" class="button pboard-add" data-planning-addgroup><i class="ph-plus-bold"></i><span>Add group</span></button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Status and priority</h2>
+    <p class="mb-4">Colour-block pills. Click one to open the option list and change the value.</p>
+    <div class="doc-demo">
+<div class="pboard" data-planning data-start="2026-10-05" data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]">
+<div style="display:grid;grid-template-columns:repeat(4,150px);gap:12px;align-items:center">
+<button type="button" class="status" data-pick="status" data-status="not-started">Not started</button>
+<button type="button" class="status" data-pick="status" data-status="working">Working on it</button>
+<button type="button" class="status" data-pick="status" data-status="stuck">Stuck</button>
+<button type="button" class="status" data-pick="status" data-status="done">Done</button>
+<button type="button" class="status" data-pick="priority" data-status="low">Low</button>
+<button type="button" class="status" data-pick="priority" data-status="medium">Medium</button>
+<button type="button" class="status" data-pick="priority" data-status="high">High</button>
+<button type="button" class="status" data-pick="priority" data-status="critical">Critical</button>
+</div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Owner</h2>
+    <p class="mb-4">An avatar button. Click to pick from the people list, unassign, or add someone new.</p>
+    <div class="doc-demo">
+<div class="pboard" data-planning data-start="2026-10-05" data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]">
+<div data-row data-owner="Alex Morgan" class="pcell-owner" style="display:flex;gap:12px;align-items:center"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Alex Morgan"><span class="avatar" title="Alex Morgan">AM</span></button><span style="font-size:.875rem;color:var(--c-text-secondary)">Click the avatar to reassign, unassign or add a person</span></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Timeline</h2>
+    <p class="mb-4">A date range drawn against a four-week window. Click it to set start and end dates, or clear them.</p>
+    <div class="doc-demo">
+<div class="pboard" style="--g:#579bfc" data-planning data-start="2026-10-05" data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]">
+<div data-row data-owner="" data-from="2026-10-08" data-to="2026-10-12" style="max-width:420px"><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 3; --e: 8;"><i></i><span>Oct 8 – 12</span></button></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Item with subitems</h2>
+    <p class="mb-4">A row with name, owner, status, priority and timeline. Click the name to rename, ▸ to show subitems, + to add one and the trash button (twice) to delete.</p>
+    <div class="doc-demo">
+<div class="pboard" data-planning data-start="2026-10-05" data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]">
+<div class="pgroup" style="--g:#579bfc"><div class="ptable">
+<div class="prow prow--head"><span>Item</span><span>Owner</span><span>Status</span><span>Priority</span><span>Timeline</span></div>
+<div class="pitem">
+<div class="prow" data-row data-owner="Alex Morgan" data-from="2026-10-08" data-to="2026-10-12"><span class="pcell-name"><button type="button" class="prow-expand" aria-expanded="false" aria-label="Show subitems"><i class="ph-caret-right-bold"></i></button><span class="pname">Finalise Q4 roadmap</span><span class="psub-count"></span><span class="prow-actions"><button type="button" class="row-btn" data-add-sub aria-label="Add subitem"><i class="ph-plus-bold"></i></button><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Alex Morgan"><span class="avatar" title="Alex Morgan">AM</span></button></span><span><button type="button" class="status" data-pick="status" data-status="working">Working on it</button></span><span><button type="button" class="status" data-pick="priority" data-status="high">High</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 3; --e: 8;"><i></i><span>Oct 8 – 12</span></button></span></div>
+<div class="psubs" hidden>
+<div class="prow prow--sub" data-subrow data-owner="Jamie Kim" data-from="2026-10-08" data-to="2026-10-09"><span class="pcell-name"><span class="pname">Collect team input</span><span class="prow-actions"><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Jamie Kim"><span class="avatar" title="Jamie Kim">JK</span></button></span><span><button type="button" class="status" data-pick="status" data-status="done">Done</button></span><span><button type="button" class="status" data-pick="priority" data-status="medium">Medium</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 3; --e: 5;"><i></i><span>Oct 8 – 9</span></button></span></div>
+<div class="prow prow--sub" data-subrow data-owner="Alex Morgan" data-from="2026-10-09" data-to="2026-10-11"><span class="pcell-name"><span class="pname">Draft milestones</span><span class="prow-actions"><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Alex Morgan"><span class="avatar" title="Alex Morgan">AM</span></button></span><span><button type="button" class="status" data-pick="status" data-status="working">Working on it</button></span><span><button type="button" class="status" data-pick="priority" data-status="high">High</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 4; --e: 7;"><i></i><span>Oct 9 – 11</span></button></span></div>
+<div class="psubs-add"><button type="button" data-add-subitem><i class="ph-plus-bold"></i><span>Add subitem</span></button></div>
+</div>
+</div>
+</div></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Subitem</h2>
+    <p class="mb-4">A nested row, indented under its item. It has its own owner, status, priority and timeline.</p>
+    <div class="doc-demo">
+<div class="pboard" data-planning data-start="2026-10-05" data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]">
+<div class="pgroup" style="--g:#579bfc"><div class="ptable">
+<div class="prow prow--head"><span>Item</span><span>Owner</span><span>Status</span><span>Priority</span><span>Timeline</span></div>
+<div class="prow prow--sub" data-subrow data-owner="Jamie Kim" data-from="2026-10-08" data-to="2026-10-09"><span class="pcell-name"><span class="pname">Collect team input</span><span class="prow-actions"><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Jamie Kim"><span class="avatar" title="Jamie Kim">JK</span></button></span><span><button type="button" class="status" data-pick="status" data-status="done">Done</button></span><span><button type="button" class="status" data-pick="priority" data-status="medium">Medium</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 3; --e: 5;"><i></i><span>Oct 8 – 9</span></button></span></div>
+</div></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Group</h2>
+    <p class="mb-4">A collapsible set of items. Rename it, recolour it with the dot, add items, or delete the group; the bar summarises item statuses.</p>
+    <div class="doc-demo">
+<div class="pboard" data-planning data-start="2026-10-05" data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]">
+<div class="pgroup" style="--g:#a25ddc">
+<div class="pgroup-head"><button class="pgroup-toggle" type="button" aria-expanded="true" aria-label="Toggle group"><i class="ph-caret-down-bold"></i></button><button type="button" class="pgroup-color" data-group-color aria-label="Group colour"></button><h3 class="pgroup-title">Next week</h3><span class="pgroup-count"></span><button type="button" class="row-btn row-btn--danger pgroup-del" data-delete-group aria-label="Delete group"><i class="ph-trash-bold"></i></button></div>
+<div class="ptable">
+<div class="prow prow--head"><span>Item</span><span>Owner</span><span>Status</span><span>Priority</span><span>Timeline</span></div>
+<div class="pitem">
+<div class="prow" data-row data-owner="Lee Taylor" data-from="2026-10-16" data-to="2026-10-21"><span class="pcell-name"><button type="button" class="prow-expand" aria-expanded="false" aria-label="Show subitems"><i class="ph-caret-right-bold"></i></button><span class="pname">Design system audit</span><span class="psub-count"></span><span class="prow-actions"><button type="button" class="row-btn" data-add-sub aria-label="Add subitem"><i class="ph-plus-bold"></i></button><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Lee Taylor"><span class="avatar" title="Lee Taylor">LT</span></button></span><span><button type="button" class="status" data-pick="status" data-status="not-started">Not started</button></span><span><button type="button" class="status" data-pick="priority" data-status="medium">Medium</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 11; --e: 17;"><i></i><span>Oct 16 – 21</span></button></span></div>
+<div class="psubs" hidden>
+<div class="psubs-add"><button type="button" data-add-subitem><i class="ph-plus-bold"></i><span>Add subitem</span></button></div>
+</div>
+</div>
+<div class="pitem">
+<div class="prow" data-row data-owner="Alex Morgan" data-from="2026-10-18" data-to="2026-10-19"><span class="pcell-name"><button type="button" class="prow-expand" aria-expanded="false" aria-label="Show subitems"><i class="ph-caret-right-bold"></i></button><span class="pname">Hiring panel prep</span><span class="psub-count"></span><span class="prow-actions"><button type="button" class="row-btn" data-add-sub aria-label="Add subitem"><i class="ph-plus-bold"></i></button><button type="button" class="row-btn row-btn--danger" data-delete-row aria-label="Delete"><i class="ph-trash-bold"></i></button></span></span><span class="pcell-owner"><button type="button" class="owner-btn" data-owner-pick aria-label="Change owner" title="Alex Morgan"><span class="avatar" title="Alex Morgan">AM</span></button></span><span><button type="button" class="status" data-pick="status" data-status="working">Working on it</button></span><span><button type="button" class="status" data-pick="priority" data-status="low">Low</button></span><span><button type="button" class="ptimeline" data-timeline-pick aria-label="Edit timeline" style="--s: 13; --e: 15;"><i></i><span>Oct 18 – 19</span></button></span></div>
+<div class="psubs" hidden>
+<div class="psubs-add"><button type="button" data-add-subitem><i class="ph-plus-bold"></i><span>Add subitem</span></button></div>
+</div>
+</div>
+</div>
+<div class="pgroup-add"><button type="button" data-planning-add><i class="ph-plus-bold"></i><span>Add item</span></button></div>
+<div class="pgroup-summary" aria-label="Status summary"></div>
+</div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Add group</h2>
+    <p class="mb-4">Appends a new, renameable group that reuses the board’s column headers.</p>
+    <div class="doc-demo">
+<div class="pboard" data-planning data-start="2026-10-05" data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]">
+<button type="button" class="button pboard-add" data-planning-addgroup><i class="ph-plus-bold"></i><span>Add group</span></button>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="../index.html"><i class="ph-arrow-left-bold"></i> All components</a></span><span></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

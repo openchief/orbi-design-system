@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notification · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#feedback">Feedback</a></li>
+      <li aria-current="page">Notification</li>
+    </ol></nav>
+    <h1>Notification</h1>
+    <p>Communicates status. Inline notifications sit in content; toasts appear temporarily.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Inline — kinds</h2>
+    <div class="doc-demo ">
+<div class="stack">
+  <div class="notification notification--info"><i class="ph-info-bold"></i><div class="notification-content"><div class="notification-title">New version available</div><div class="notification-text">Update to get the latest integrations.</div></div><button class="notification-close" aria-label="Dismiss"><i class="ph-x-bold"></i></button></div>
+  <div class="notification notification--success"><i class="ph-check-circle-bold"></i><div class="notification-content"><div class="notification-title">GitHub connected</div><div class="notification-text">Pull requests will now sync.</div></div><button class="notification-close" aria-label="Dismiss"><i class="ph-x-bold"></i></button></div>
+  <div class="notification notification--warning"><i class="ph-warning-bold"></i><div class="notification-content"><div class="notification-title">Plan limit approaching</div><div class="notification-text">You have used 90% of your seats.</div></div><button class="notification-close" aria-label="Dismiss"><i class="ph-x-bold"></i></button></div>
+  <div class="notification notification--error"><i class="ph-warning-circle-bold"></i><div class="notification-content"><div class="notification-title">Sync failed</div><div class="notification-text">Check your credentials and retry.</div></div><button class="notification-close" aria-label="Dismiss"><i class="ph-x-bold"></i></button></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Tinted & low contrast</h2>
+    <div class="doc-demo ">
+<div class="stack">
+  <div class="notification notification--tinted notification--info"><i class="ph-info-bold"></i><div class="notification-content"><div class="notification-title">Heads up</div><div class="notification-text">Tinted background variant.</div></div></div>
+  <div class="notification notification--tinted notification--warning"><i class="ph-warning-bold"></i><div class="notification-content"><div class="notification-title">Heads up</div><div class="notification-text">Tinted warning.</div></div></div>
+  <div class="notification notification--low notification--success"><i class="ph-check-circle-bold"></i><div class="notification-content"><div class="notification-title">Saved</div><div class="notification-text">Outlined, low-emphasis.</div></div></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>With actions</h2>
+    <div class="doc-demo ">
+<div class="notification notification--info"><i class="ph-info-bold"></i><div class="notification-content"><div class="notification-title">Invite pending</div><div class="notification-text">Jane invited you to join Orbi.</div><div class="notification-actions"><button class="button button--primary button--sm" type="button"><span>Accept</span></button><button class="button button--sm" type="button"><span>Decline</span></button></div></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Toast</h2><p>Toasts stack in the top-right and dismiss after 5 seconds.</p>
+    <div class="doc-demo ">
+<div class="row">
+  <button class="button" type="button" data-toast="success" data-title="Changes saved" data-text="Your settings were updated."><span>Success toast</span></button>
+  <button class="button" type="button" data-toast="error" data-title="Upload failed" data-text="The file is too large."><span>Error toast</span></button>
+  <button class="button" type="button" data-toast="info" data-title="Syncing" data-text="Fetching latest data…"><span>Info toast</span></button>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="loading.html"><i class="ph-arrow-left-bold"></i> Loading</a></span><span><a class="link" href="progress-bar.html">Progress bar <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

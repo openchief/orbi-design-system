@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UI shell right panel · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#ui-shell">UI shell</a></li>
+      <li aria-current="page">UI shell right panel</li>
+    </ol></nav>
+    <h1>UI shell right panel</h1>
+    <p>A secondary panel for contextual content such as notifications, details or assistants. Toggle it from the header.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Docked panel</h2>
+    <div class="doc-demo doc-demo--pad0">
+<div class="shell-frame">
+  <header class="shell-header" style="height:64px"><div class="shell-header-content"><a class="shell-logo" href="#"><span class="shell-logo-mark"></span><span>Orbi</span></a><div style="flex:1"></div>
+    <div class="shell-actions"><button class="icon-button shell-badge" type="button" data-toggle-hidden="#rp1" aria-label="Toggle notifications"><i class="ph-bell-bold"></i></button></div></div></header>
+  <div class="shell-body">
+    <div class="shell-main"><h2 class="t-h2">Dashboard</h2><p class="t-small t-secondary mt-4">Click the bell to toggle the right panel.</p></div>
+    <aside class="shell-right" id="rp1" aria-label="Notifications">
+      <div class="shell-right-header"><h2>Notifications</h2><button class="icon-button icon-button--sm" data-toggle-hidden="#rp1" aria-label="Close panel" type="button"><i class="ph-x-bold"></i></button></div>
+      <div class="shell-right-body">
+        <div class="feed-item"><span class="avatar">JA</span><div><strong>Jane</strong> merged <strong>#482</strong><p>4 minutes ago</p></div></div>
+        <div class="feed-item"><span class="avatar" style="background:var(--c-success-bg);color:var(--c-success)">MK</span><div><strong>Mika</strong> enabled Slack<p>1 hour ago</p></div></div>
+        <div class="feed-item"><span class="avatar" style="background:var(--c-warning-bg);color:var(--c-warning)">TS</span><div><strong>Tariq</strong> commented on Billing<p>Yesterday</p></div></div>
+      </div>
+      <div class="shell-right-footer"><button class="button button--sm" type="button"><span>Mark all read</span></button></div>
+    </aside>
+  </div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Overlay panel</h2><p>Slides over the content instead of pushing it.</p>
+    <div class="doc-demo doc-demo--pad0">
+<div class="shell-frame" style="min-height:360px"><div class="shell-body">
+  <div class="shell-main"><button class="button" type="button" data-toggle-hidden="#rp2"><i class="ph-sliders-horizontal-bold"></i><span>Toggle details</span></button></div>
+  <aside class="shell-right shell-right--overlay" id="rp2" aria-label="Details">
+    <div class="shell-right-header"><h2>Item details</h2><button class="icon-button icon-button--sm" data-toggle-hidden="#rp2" aria-label="Close" type="button"><i class="ph-x-bold"></i></button></div>
+    <div class="shell-right-body stack"><div class="field" style="max-width:none"><label class="field-label" for="rp2n">Name</label><input class="input" id="rp2n" value="api-gateway"></div><label class="toggle-field"><span class="toggle"><input type="checkbox" checked><span></span></span>Enabled</label></div>
+    <div class="shell-right-footer"><button class="button button--primary button--sm" type="button"><span>Save</span></button></div>
+  </aside></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">.shell-right</code></td><td>340px docked panel; add <code class="code-inline">--overlay</code> to float</td></tr><tr><td><code class="code-inline">[data-toggle-hidden="#id"]</code></td><td>Shows/hides the target via the hidden attribute</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="ui-shell-left-panel.html"><i class="ph-arrow-left-bold"></i> UI shell left panel</a></span><span></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

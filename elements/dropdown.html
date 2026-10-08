@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dropdown · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Dropdown</li>
+    </ol></nav>
+    <h1>Dropdown</h1>
+    <p>A custom listbox for choosing one or many options, with optional search.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Single select</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="dropdown" style="max-width:300px">
+  <button class="dropdown-trigger" type="button" data-trigger aria-haspopup="listbox" aria-expanded="false"><span class="dropdown-value"><span class="placeholder">Select an app</span></span><i class="ph-caret-down-bold"></i></button>
+  <div class="dropdown-menu" role="listbox">
+    <button class="dropdown-option" role="option" type="button" aria-selected="false">GitHub</button>
+    <button class="dropdown-option" role="option" type="button" aria-selected="false">Figma</button>
+    <button class="dropdown-option" role="option" type="button" aria-selected="false">Slack</button>
+    <button class="dropdown-option" role="option" type="button" aria-disabled="true">Jira (unavailable)</button>
+  </div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Multi select</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="dropdown" data-multi data-placeholder="Choose apps" style="max-width:300px">
+  <button class="dropdown-trigger" type="button" data-trigger aria-haspopup="listbox" aria-expanded="false"><span class="dropdown-value"><span class="placeholder">Choose apps</span></span><i class="ph-caret-down-bold"></i></button>
+  <div class="dropdown-menu" role="listbox" aria-multiselectable="true">
+    <button class="dropdown-option" role="option" type="button" aria-selected="true">Notion</button>
+    <button class="dropdown-option" role="option" type="button" aria-selected="false">Dropbox</button>
+    <button class="dropdown-option" role="option" type="button" aria-selected="false">Discord</button>
+  </div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Searchable</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="dropdown" style="max-width:300px">
+  <button class="dropdown-trigger" type="button" data-trigger aria-haspopup="listbox" aria-expanded="false"><span class="dropdown-value"><span class="placeholder">Select a country</span></span><i class="ph-caret-down-bold"></i></button>
+  <div class="dropdown-menu" role="listbox">
+    <div class="dropdown-search"><input class="input" placeholder="Search…" aria-label="Filter options"></div>
+    <button class="dropdown-option" role="option" type="button" aria-selected="false">France</button>
+    <button class="dropdown-option" role="option" type="button" aria-selected="false">Germany</button>
+    <button class="dropdown-option" role="option" type="button" aria-selected="false">India</button>
+    <button class="dropdown-option" role="option" type="button" aria-selected="false">Japan</button>
+    <button class="dropdown-option" role="option" type="button" aria-selected="false">Norway</button>
+  </div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">.dropdown</code></td><td>Root — add <code class="code-inline">data-multi</code> for multi-select</td></tr><tr><td><code class="code-inline">[data-trigger]</code></td><td>Opens/closes the menu</td></tr><tr><td><code class="code-inline">.dropdown-value</code></td><td>Displays the current selection</td></tr><tr><td><code class="code-inline">.dropdown-option[aria-selected]</code></td><td>Option & selection state</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="date-picker.html"><i class="ph-arrow-left-bold"></i> Date picker</a></span><span><a class="link" href="file-uploader.html">File uploader <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkbox · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Checkbox</li>
+    </ol></nav>
+    <h1>Checkbox</h1>
+    <p>Lets users select one or more items. Supports checked, indeterminate, disabled and error states.</p>
+  </div>
+  <section class="doc-section">
+    <h2>States</h2>
+    <div class="doc-demo ">
+<div class="choice-group">
+  <label class="checkbox"><input type="checkbox"><span class="box"></span><span class="label-text">Unchecked</span></label>
+  <label class="checkbox"><input type="checkbox" checked><span class="box"></span><span class="label-text">Checked</span></label>
+  <label class="checkbox"><input type="checkbox" data-indeterminate><span class="box"></span><span class="label-text">Indeterminate</span></label>
+  <label class="checkbox"><input type="checkbox" disabled><span class="box"></span><span class="label-text">Disabled</span></label>
+  <label class="checkbox"><input type="checkbox" checked disabled><span class="box"></span><span class="label-text">Disabled checked</span></label>
+  <label class="checkbox is-invalid"><input type="checkbox"><span class="box"></span><span class="label-text">Invalid</span></label>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Group with helper text</h2>
+    <div class="doc-demo ">
+<fieldset class="choice-group"><legend>Notify me about</legend>
+  <label class="checkbox"><input type="checkbox" checked><span class="box"></span><span class="label-text">Pull requests<small>When someone requests your review.</small></span></label>
+  <label class="checkbox"><input type="checkbox"><span class="box"></span><span class="label-text">Deploys<small>When a deploy finishes or fails.</small></span></label>
+  <label class="checkbox"><input type="checkbox"><span class="box"></span><span class="label-text">Weekly digest<small>A summary every Monday.</small></span></label>
+</fieldset>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">.checkbox</code></td><td>Label wrapper</td></tr><tr><td><code class="code-inline">input + .box + .label-text</code></td><td>Required child order</td></tr><tr><td><code class="code-inline">data-indeterminate</code></td><td>JS sets the indeterminate property</td></tr><tr><td><code class="code-inline">.is-invalid</code></td><td>Error border</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="menu-buttons.html"><i class="ph-arrow-left-bold"></i> Menu buttons</a></span><span><a class="link" href="date-picker.html">Date picker <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

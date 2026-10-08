@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calendar · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#content">Content</a></li>
+      <li aria-current="page">Calendar</li>
+    </ol></nav>
+    <h1>Calendar</h1>
+    <p>A schedule with separate day, week, month and year views. Click an empty slot or use <strong>Add event</strong> to create an item, and click any event to edit or delete it.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Week view</h2>
+    <div class="doc-demo">
+      <div class="event-calendar" data-calendar data-view="week" id="cal-demo"></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Usage</h2>
+    <div class="doc-demo" data-nocode>
+<div class="code-block"><pre><code>&lt;div class="event-calendar" data-calendar data-view="week"
+     data-events='[{"title":"Standup","date":"2026-10-09","start":"09:00","end":"09:30","color":"blue"},
+                   {"title":"Holiday","date":"2026-10-12","allDay":true,"color":"green"}]'&gt;&lt;/div&gt;
+
+// read or change items from script
+var cal = OrbiCalendar.get(document.querySelector("[data-calendar]"));
+cal.addEvent({ title: "Review", date: "2026-10-10", start: "14:00", end: "15:00", color: "purple" });
+el.addEventListener("calendar:change", function (e) { console.log(e.detail.events); });</code></pre></div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="../index.html"><i class="ph-arrow-left-bold"></i> All components</a></span><span></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+<script>
+  /* demo data, placed relative to today so the example never goes stale */
+  (function () {
+    var cal = OrbiCalendar.get(document.getElementById("cal-demo")), t = new Date();
+    function day(n) { var d = new Date(t.getFullYear(), t.getMonth(), t.getDate() + n); return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2); }
+    var list = [
+      { title: "event 2", date: day(1), start: "08:00", end: "09:00" },
+      { title: "event 3 (multiple hour)", date: day(1), start: "10:30", end: "12:30" },
+      { title: "event 1", date: day(1), start: "15:00", end: "16:00" },
+      { title: "Airport transfer", date: day(-1), start: "17:10", end: "18:40", color: "purple" },
+      { title: "Design review", date: day(0), start: "11:00", end: "12:00", color: "amber" },
+      { title: "Planning", date: day(0), start: "11:30", end: "12:30", color: "red" },
+      { title: "Public holiday", date: day(4), allDay: true, color: "green" }
+    ];
+    for (var i = -7; i <= 21; i++) { var d = new Date(t.getFullYear(), t.getMonth(), t.getDate() + i); if (d.getDay() !== 1 && d.getDay() !== 5) list.push({ title: "Team sync", date: day(i), start: "09:00", end: "09:30" }); }
+    cal.setEvents(list);
+  })();
+</script>
+</body>
+</html>

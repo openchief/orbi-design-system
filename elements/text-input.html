@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Text input · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Text input</li>
+    </ol></nav>
+    <h1>Text input</h1>
+    <p>Single-line text entry with label, helper text and validation states.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo ">
+<div class="stack">
+  <div class="field"><label class="field-label" for="ti1">Full name</label><input class="input" id="ti1" type="text" placeholder="Jane Appleseed"><span class="field-helper">As it appears on your ID.</span></div>
+  <div class="field"><label class="field-label" for="ti2">Email <span class="optional">Optional</span></label><div class="input-wrap"><i class="ph-envelope-simple-bold"></i><input class="input" id="ti2" type="email" placeholder="you@company.com"></div></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>States</h2>
+    <div class="doc-demo ">
+<div class="grid-2">
+  <div class="field is-valid"><label class="field-label" for="ti3">Valid</label><input class="input" id="ti3" value="jane@orbi.dev"></div>
+  <div class="field is-invalid"><label class="field-label" for="ti4">Invalid</label><input class="input" id="ti4" value="not-an-email"><span class="field-helper">Helper text</span><span class="field-error"><i class="ph-warning-circle-bold"></i><span>Enter a valid email address.</span></span></div>
+  <div class="field"><label class="field-label" for="ti5">Disabled</label><input class="input" id="ti5" value="Locked value" disabled></div>
+  <div class="field"><label class="field-label" for="ti6">Read only</label><input class="input" id="ti6" value="Read-only value" readonly></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Sizes</h2>
+    <div class="doc-demo ">
+<div class="stack">
+  <div class="field"><input class="input input--sm" placeholder="Small (32px)" aria-label="Small"></div>
+  <div class="field"><input class="input" placeholder="Default (40px)" aria-label="Default"></div>
+  <div class="field"><input class="input input--lg" placeholder="Large (48px)" aria-label="Large"></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Password with toggle</h2>
+    <div class="doc-demo ">
+<div class="field"><label class="field-label" for="pw">Password</label>
+  <div class="input-wrap"><input class="input" id="pw" type="password" value="supersecret" style="padding-right:44px"><button type="button" class="icon-button icon-button--sm" aria-label="Show password" onclick="var i=document.getElementById('pw');i.type=i.type==='password'?'text':'password'"><i class="ph-eye-bold"></i></button></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">.field</code></td><td>Wrapper — label, control, helper, error</td></tr><tr><td><code class="code-inline">.field.is-invalid / .is-valid</code></td><td>Validation state</td></tr><tr><td><code class="code-inline">.input</code></td><td>Text control</td></tr><tr><td><code class="code-inline">.input-wrap</code></td><td>Adds a leading icon or trailing button</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="slider.html"><i class="ph-arrow-left-bold"></i> Slider</a></span><span><a class="link" href="textarea.html">Textarea <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

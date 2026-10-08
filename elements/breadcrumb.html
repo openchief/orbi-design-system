@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Breadcrumb · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#navigation">Navigation</a></li>
+      <li aria-current="page">Breadcrumb</li>
+    </ol></nav>
+    <h1>Breadcrumb</h1>
+    <p>Shows the user’s location in a hierarchy and links back to parents.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo ">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+  <li><a href="#">Home</a></li><li><a href="#">Settings</a></li><li><a href="#">Integrations</a></li><li aria-current="page">GitHub</li>
+</ol></nav>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Chevron separator</h2>
+    <div class="doc-demo ">
+<nav class="breadcrumb breadcrumb--chevron" aria-label="Breadcrumb"><ol>
+  <li><a href="#"><i class="ph-house-bold"></i></a></li><li><a href="#">Projects</a></li><li aria-current="page">Orbi</li>
+</ol></nav>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="toggle.html"><i class="ph-arrow-left-bold"></i> Toggle</a></span><span><a class="link" href="content-switcher.html">Content switcher <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

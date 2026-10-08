@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Date picker · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#forms">Forms</a></li>
+      <li aria-current="page">Date picker</li>
+    </ol></nav>
+    <h1>Date picker</h1>
+    <p>Choose a single date or a date range from a calendar popup. Click the field to open it.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Single date</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="field"><label class="field-label" for="d1">Start date</label>
+  <div class="datepicker" data-datepicker><div class="input-wrap"><input class="input" id="d1" type="text" placeholder="mm/dd/yyyy" autocomplete="off"><i class="ph-calendar-blank-bold"></i></div></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Range</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="field"><label class="field-label" for="d2">Date range</label>
+  <div class="datepicker" data-datepicker data-range><div class="input-wrap"><input class="input" id="d2" type="text" placeholder="mm/dd/yyyy – mm/dd/yyyy" autocomplete="off"><i class="ph-calendar-blank-bold"></i></div></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">[data-datepicker]</code></td><td>Wrapper — the calendar is generated on focus</td></tr><tr><td><code class="code-inline">[data-range]</code></td><td>Two-click range selection</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="checkbox.html"><i class="ph-arrow-left-bold"></i> Checkbox</a></span><span><a class="link" href="dropdown.html">Dropdown <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

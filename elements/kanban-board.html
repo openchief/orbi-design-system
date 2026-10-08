@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanban board · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#boards">Boards</a></li>
+      <li aria-current="page">Kanban board</li>
+    </ol></nav>
+    <h1>Kanban board</h1>
+    <p>Cards grouped into columns by stage, moved across as work progresses.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Board</h2>
+    <p class="mb-4">Click a card to edit its title, tags, due date and owner, or delete it. Drag cards between columns (or focus one and press ← / →). Use a column’s ⋯ menu or click its name to rename, recolour or delete it, and “Add column” for a new stage.</p>
+    <div class="doc-demo">
+<div class="kanban" data-kanban data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]">
+    <section class="kcol" style="--col:#a1a6bd" aria-label="To do"><header class="kcol-head"><h3>To do</h3><span class="kcol-count">3</span><button type="button" class="icon-button icon-button--sm kcol-menu" data-col-menu aria-label="Column options"><i class="ph-dots-three-bold"></i></button></header>
+    <div class="kcol-body">
+      <article class="kcard" draggable="true" tabindex="0" data-tags="Content" data-due="2026-10-14" data-owner="Alex Morgan"><div class="kcard-tags"><span class="tag tag--blue tag--sm">Content</span></div><h4>Draft onboarding checklist</h4><div class="kcard-foot"><span class="kcard-due"><i class="ph-calendar-blank-bold"></i> Oct 14</span><span class="avatar" title="Alex Morgan">AM</span></div></article>
+      <article class="kcard" draggable="true" tabindex="0" data-tags="Design" data-due="2026-10-16" data-owner="Jamie Kim"><div class="kcard-tags"><span class="tag tag--yellow tag--sm">Design</span></div><h4>Audit colour contrast</h4><div class="kcard-foot"><span class="kcard-due"><i class="ph-calendar-blank-bold"></i> Oct 16</span><span class="avatar" title="Jamie Kim">JK</span></div></article>
+      <article class="kcard" draggable="true" tabindex="0" data-tags="Docs" data-due="2026-10-18" data-owner="Sam Rivera"><div class="kcard-tags"><span class="tag tag--green tag--sm">Docs</span></div><h4>Write release notes</h4><div class="kcard-foot"><span class="kcard-due"><i class="ph-calendar-blank-bold"></i> Oct 18</span><span class="avatar" title="Sam Rivera">SR</span></div></article>
+    </div>
+    <button class="kcol-add" type="button" data-kanban-add><i class="ph-plus-bold"></i><span>Add card</span></button></section>
+    <section class="kcol" style="--col:#fdab3d" aria-label="In progress"><header class="kcol-head"><h3>In progress</h3><span class="kcol-count">2</span><button type="button" class="icon-button icon-button--sm kcol-menu" data-col-menu aria-label="Column options"><i class="ph-dots-three-bold"></i></button></header>
+    <div class="kcol-body">
+      <article class="kcard" draggable="true" tabindex="0" data-tags="Frontend,High" data-due="2026-10-12" data-owner="Lee Taylor"><div class="kcard-tags"><span class="tag tag--blue tag--sm">Frontend</span><span class="tag tag--red tag--sm">High</span></div><h4>Build billing settings page</h4><div class="kcard-foot"><span class="kcard-due"><i class="ph-calendar-blank-bold"></i> Oct 12</span><span class="avatar" title="Lee Taylor">LT</span></div></article>
+      <article class="kcard" draggable="true" tabindex="0" data-tags="Backend" data-due="2026-10-13" data-owner="Alex Morgan"><div class="kcard-tags"><span class="tag tag--yellow tag--sm">Backend</span></div><h4>Migrate user roles</h4><div class="kcard-foot"><span class="kcard-due"><i class="ph-calendar-blank-bold"></i> Oct 13</span><span class="avatar" title="Alex Morgan">AM</span></div></article>
+    </div>
+    <button class="kcol-add" type="button" data-kanban-add><i class="ph-plus-bold"></i><span>Add card</span></button></section>
+    <section class="kcol" style="--col:#579bfc" aria-label="Review"><header class="kcol-head"><h3>Review</h3><span class="kcol-count">1</span><button type="button" class="icon-button icon-button--sm kcol-menu" data-col-menu aria-label="Column options"><i class="ph-dots-three-bold"></i></button></header>
+    <div class="kcol-body">
+      <article class="kcard" draggable="true" tabindex="0" data-tags="Design" data-due="2026-10-10" data-owner="Jamie Kim"><div class="kcard-tags"><span class="tag tag--yellow tag--sm">Design</span></div><h4>Search results redesign</h4><div class="kcard-foot"><span class="kcard-due"><i class="ph-calendar-blank-bold"></i> Oct 10</span><span class="avatar" title="Jamie Kim">JK</span></div></article>
+    </div>
+    <button class="kcol-add" type="button" data-kanban-add><i class="ph-plus-bold"></i><span>Add card</span></button></section>
+    <section class="kcol" style="--col:#00b87a" aria-label="Done"><header class="kcol-head"><h3>Done</h3><span class="kcol-count">2</span><button type="button" class="icon-button icon-button--sm kcol-menu" data-col-menu aria-label="Column options"><i class="ph-dots-three-bold"></i></button></header>
+    <div class="kcol-body">
+      <article class="kcard" draggable="true" tabindex="0" data-tags="Infra" data-due="2026-10-07" data-owner="Sam Rivera"><div class="kcard-tags"><span class="tag tag--green tag--sm">Infra</span></div><h4>Set up CI pipeline</h4><div class="kcard-foot"><span class="kcard-due"><i class="ph-calendar-blank-bold"></i> Oct 7</span><span class="avatar" title="Sam Rivera">SR</span></div></article>
+      <article class="kcard" draggable="true" tabindex="0" data-tags="Design" data-due="2026-10-06" data-owner="Lee Taylor"><div class="kcard-tags"><span class="tag tag--yellow tag--sm">Design</span></div><h4>Update brand tokens</h4><div class="kcard-foot"><span class="kcard-due"><i class="ph-calendar-blank-bold"></i> Oct 6</span><span class="avatar" title="Lee Taylor">LT</span></div></article>
+    </div>
+    <button class="kcol-add" type="button" data-kanban-add><i class="ph-plus-bold"></i><span>Add card</span></button></section>
+    <button type="button" class="kcol-ghost" data-kanban-addcol><i class="ph-plus-bold"></i><span>Add column</span></button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Card</h2>
+    <p class="mb-4">A single work item. Click it to edit the title, tags, due date and owner or delete it; drag it to move it. Empty fields are simply hidden.</p>
+    <div class="doc-demo">
+<div class="kanban" data-kanban data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]" style="grid-auto-columns:minmax(260px,320px)">
+<section class="kcol" style="--col:#a1a6bd" aria-label="To do"><header class="kcol-head"><h3>To do</h3><span class="kcol-count">2</span><button type="button" class="icon-button icon-button--sm kcol-menu" data-col-menu aria-label="Column options"><i class="ph-dots-three-bold"></i></button></header>
+  <div class="kcol-body"><article class="kcard" draggable="true" tabindex="0" data-tags="" data-due="" data-owner=""><div class="kcard-tags"></div><h4>Title-only card</h4><div class="kcard-foot"><span></span><span class="avatar avatar--empty" title="Unassigned"><i class="ph-user-plus-bold"></i></span></div></article>
+<article class="kcard" draggable="true" tabindex="0" data-tags="Design,High" data-due="2026-10-14" data-owner="Alex Morgan"><div class="kcard-tags"><span class="tag tag--blue tag--sm">Design</span><span class="tag tag--yellow tag--sm">High</span></div><h4>Card with tags, due date and owner</h4><div class="kcard-foot"><span class="kcard-due"><i class="ph-calendar-blank-bold"></i> Oct 14</span><span class="avatar" title="Alex Morgan">AM</span></div></article></div>
+  <button class="kcol-add" type="button" data-kanban-add><i class="ph-plus-bold"></i><span>Add card</span></button></section>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Column</h2>
+    <p class="mb-4">A stage in the workflow with a colour dot, card count and options menu. Click the name to rename it, ⋯ to recolour or delete it, and “Add card” to add a card inline.</p>
+    <div class="doc-demo">
+<div class="kanban" data-kanban data-people="[&quot;Alex Morgan&quot;,&quot;Jamie Kim&quot;,&quot;Sam Rivera&quot;,&quot;Lee Taylor&quot;]" style="grid-auto-columns:minmax(260px,320px)">
+<section class="kcol" style="--col:#fdab3d" aria-label="In progress"><header class="kcol-head"><h3>In progress</h3><span class="kcol-count">0</span><button type="button" class="icon-button icon-button--sm kcol-menu" data-col-menu aria-label="Column options"><i class="ph-dots-three-bold"></i></button></header>
+  <div class="kcol-body"></div>
+  <button class="kcol-add" type="button" data-kanban-add><i class="ph-plus-bold"></i><span>Add card</span></button></section>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Add column</h2>
+    <p class="mb-4">Appends a new, renameable column to the board.</p>
+    <div class="doc-demo">
+<div class="kanban" data-kanban style="grid-auto-columns:minmax(260px,320px)">
+<button type="button" class="kcol-ghost" data-kanban-addcol><i class="ph-plus-bold"></i><span>Add column</span></button>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="../index.html"><i class="ph-arrow-left-bold"></i> All components</a></span><span></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

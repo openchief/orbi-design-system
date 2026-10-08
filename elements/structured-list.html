@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Structured list · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#content">Content</a></li>
+      <li aria-current="page">Structured list</li>
+    </ol></nav>
+    <h1>Structured list</h1>
+    <p>Presents rows of related key/value information in a lightweight table-like structure.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo doc-demo--pad0">
+<table class="structured-list"><thead><tr><th>Plan</th><th>Seats</th><th>Price</th></tr></thead><tbody>
+  <tr><td>Starter</td><td>1</td><td>$0</td></tr><tr><td>Team</td><td>Up to 25</td><td>$12 / seat</td></tr><tr><td>Scale</td><td>Unlimited</td><td>$40 / seat</td></tr></tbody></table>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Selectable</h2>
+    <div class="doc-demo doc-demo--pad0">
+<table class="structured-list structured-list--selectable"><thead><tr><th></th><th>Region</th><th>Latency</th><th>Capacity</th></tr></thead><tbody>
+  <tr><td class="sl-select"><label class="radio"><input type="radio" name="sl" checked aria-label="US East"><span class="dot"></span></label></td><td>US East</td><td>24 ms</td><td>High</td></tr>
+  <tr><td class="sl-select"><label class="radio"><input type="radio" name="sl" aria-label="EU West"><span class="dot"></span></label></td><td>EU West</td><td>41 ms</td><td>Medium</td></tr>
+  <tr><td class="sl-select"><label class="radio"><input type="radio" name="sl" aria-label="Asia"><span class="dot"></span></label></td><td>Asia Pacific</td><td>88 ms</td><td>Medium</td></tr></tbody></table>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="stat-tile.html"><i class="ph-arrow-left-bold"></i> Stat tile</a></span><span><a class="link" href="tag.html">Tag <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

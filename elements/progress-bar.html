@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress bar · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#feedback">Feedback</a></li>
+      <li aria-current="page">Progress bar</li>
+    </ol></nav>
+    <h1>Progress bar</h1>
+    <p>Shows completion of a task as a percentage, or an indeterminate wait.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo ">
+<div class="progress-wrap" id="pb1"><div class="progress-label"><span>Uploading assets</span><span data-pct>60%</span></div><div class="progress"><div class="progress-bar" style="--value:60%"></div></div><div class="progress-helper">3 of 5 files</div></div>
+<button class="button button--sm mt-4" type="button" data-progress-demo="#pb1"><span>Simulate</span></button>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Statuses & sizes</h2>
+    <div class="doc-demo ">
+<div class="stack-lg">
+  <div class="progress-wrap"><div class="progress-label"><span>Success</span><span>100%</span></div><div class="progress progress--success"><div class="progress-bar" style="--value:100%"></div></div></div>
+  <div class="progress-wrap"><div class="progress-label"><span>Warning</span><span>82%</span></div><div class="progress progress--warning"><div class="progress-bar" style="--value:82%"></div></div></div>
+  <div class="progress-wrap"><div class="progress-label"><span>Error</span><span>35%</span></div><div class="progress progress--danger"><div class="progress-bar" style="--value:35%"></div></div></div>
+  <div class="progress-wrap"><div class="progress progress--sm"><div class="progress-bar" style="--value:50%"></div></div></div>
+  <div class="progress-wrap"><div class="progress progress--lg"><div class="progress-bar" style="--value:50%"></div></div></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Indeterminate</h2>
+    <div class="doc-demo ">
+<div class="progress-wrap"><div class="progress-label"><span>Processing…</span></div><div class="progress progress--indeterminate"><div class="progress-bar"></div></div></div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="notification.html"><i class="ph-arrow-left-bold"></i> Notification</a></span><span><a class="link" href="menu.html">Menu <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

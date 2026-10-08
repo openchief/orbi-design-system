@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress indicator · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#navigation">Navigation</a></li>
+      <li aria-current="page">Progress indicator</li>
+    </ol></nav>
+    <h1>Progress indicator</h1>
+    <p>Shows the steps in a multi-stage flow and where the user is within it.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Horizontal</h2><p>Use the buttons to move through steps.</p>
+    <div class="doc-demo ">
+<div id="steps1" class="stack-lg">
+  <div class="steps">
+    <div class="step is-complete"><span class="step-marker">✓</span>Account<small>Done</small></div>
+    <div class="step is-current"><span class="step-marker">2</span>Workspace<small>In progress</small></div>
+    <div class="step"><span class="step-marker">3</span>Invite team<small>Not started</small></div>
+    <div class="step"><span class="step-marker">4</span>Finish</div>
+  </div>
+  <div class="row" data-steps="#steps1"><button class="button" data-step-nav="prev" type="button"><span>Previous</span></button><button class="button button--primary" data-step-nav="next" type="button"><span>Next</span></button></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Error state</h2>
+    <div class="doc-demo ">
+<div class="steps"><div class="step is-complete"><span class="step-marker">✓</span>Details</div><div class="step is-error"><span class="step-marker">!</span>Payment<small>Card declined</small></div><div class="step"><span class="step-marker">3</span>Review</div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Vertical</h2>
+    <div class="doc-demo ">
+<div class="steps steps--vertical" style="max-width:320px">
+  <div class="step is-complete"><span class="step-marker">✓</span><div>Create project<small>Completed</small></div></div>
+  <div class="step is-current"><span class="step-marker">2</span><div>Connect GitHub<small>In progress</small></div></div>
+  <div class="step"><span class="step-marker">3</span><div>Deploy<small>Not started</small></div></div>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="pagination.html"><i class="ph-arrow-left-bold"></i> Pagination</a></span><span><a class="link" href="tabs.html">Tabs <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

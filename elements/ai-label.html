@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI label · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#content">Content</a></li>
+      <li aria-current="page">AI label</li>
+    </ol></nav>
+    <h1>AI label</h1>
+    <p>Marks AI-generated content or AI-powered controls, and opens an explanation of how the result was produced.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Label styles</h2>
+    <div class="doc-demo ">
+<div class="row" style="gap:2rem">
+  <span class="ai-label"><button class="ai-label-trigger" type="button"><i class="ph-sparkle-bold"></i>AI</button></span>
+  <span class="ai-label"><button class="ai-label-trigger ai-label-trigger--ghost" type="button"><i class="ph-sparkle-bold"></i>Generated</button></span>
+  <span class="ai-label"><button class="ai-label-trigger ai-label-trigger--icon" type="button" aria-label="AI"><i class="ph-sparkle-bold"></i></button></span>
+  <span class="ai-label"><button class="ai-label-trigger ai-label-trigger--lg" type="button"><i class="ph-sparkle-bold"></i>AI assisted</button></span>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>With explanation</h2><p>Click the label to open its explainability popover.</p>
+    <div class="doc-demo doc-demo--tall">
+<div class="popover-wrap ai-label">
+  <button class="ai-label-trigger" type="button" data-trigger aria-expanded="false"><i class="ph-sparkle-bold"></i>AI</button>
+  <div class="popover"><div class="popover-title">AI-generated summary</div><p>This summary was produced by a language model from the last 30 comments. Review it for accuracy.</p>
+    <div class="row" style="margin-top:.75rem"><span class="tag tag--blue">Model: Orbi-1</span><span class="tag">Confidence 92%</span></div>
+    <div class="popover-actions"><button class="button button--sm" type="button"><span>View details</span></button></div></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>AI field & tile</h2><p>Gradient border signals AI-populated content.</p>
+    <div class="doc-demo doc-demo--tall">
+<div class="grid-2">
+  <div class="field"><label class="field-label" for="aif">Suggested title</label><div class="ai-field"><input class="input" id="aif" value="Q3 roadmap review" style="padding-right:80px"><span class="ai-label"><button class="ai-label-trigger" type="button"><i class="ph-sparkle-bold"></i>AI</button></span></div></div>
+  <div class="tile ai-tile"><span class="ai-label"><button class="ai-label-trigger ai-label-trigger--icon" type="button" aria-label="AI"><i class="ph-sparkle-bold"></i></button></span><h3>Weekly insight</h3><p>Deploy frequency is up 14% while failure rate is flat.</p></div>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="tree-view.html"><i class="ph-arrow-left-bold"></i> Tree view</a></span><span><a class="link" href="accordion.html">Accordion <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

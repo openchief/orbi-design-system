@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foundations · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#foundations">Foundations</a></li>
+      <li aria-current="page">Foundations</li>
+    </ol></nav>
+    <h1>Foundations</h1>
+    <p>Colour, type, spacing, shape, elevation and motion tokens extracted from the dashboard UI. Every component reads these CSS variables.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Colour — core</h2><p>Near-white canvas, white surfaces, one indigo accent. Text uses a violet-tinted charcoal.</p>
+    <div class="doc-demo  is-solo" data-nocode>
+<div class="swatch-grid"><div class="swatch"><div class="swatch-color" style="background:#282a32"></div><div class="swatch-meta"><strong>Text primary</strong><code>--c-text-primary</code><br><code>#282a32</code></div></div><div class="swatch"><div class="swatch-color" style="background:#686b87"></div><div class="swatch-meta"><strong>Text secondary</strong><code>--c-text-secondary</code><br><code>#686b87</code></div></div><div class="swatch"><div class="swatch-color" style="background:#404089"></div><div class="swatch-meta"><strong>Text action</strong><code>--c-text-action</code><br><code>#404089</code></div></div><div class="swatch"><div class="swatch-color" style="background:#434ce8"></div><div class="swatch-meta"><strong>Accent</strong><code>--c-accent-primary</code><br><code>#434ce8</code></div></div><div class="swatch"><div class="swatch-color" style="background:#eff1f6"></div><div class="swatch-meta"><strong>Border</strong><code>--c-border-primary</code><br><code>#eff1f6</code></div></div><div class="swatch"><div class="swatch-color" style="background:#ffffff"></div><div class="swatch-meta"><strong>Surface</strong><code>--c-background-primary</code><br><code>#ffffff</code></div></div><div class="swatch"><div class="swatch-color" style="background:#fdfcff"></div><div class="swatch-meta"><strong>Canvas</strong><code>--c-background-secondary</code><br><code>#fdfcff</code></div></div><div class="swatch"><div class="swatch-color" style="background:#ecf3fe"></div><div class="swatch-meta"><strong>Tint</strong><code>--c-background-tertiary</code><br><code>#ecf3fe</code></div></div><div class="swatch"><div class="swatch-color" style="background:#e9ecf4"></div><div class="swatch-meta"><strong>Track</strong><code>--c-background-quaternary</code><br><code>#e9ecf4</code></div></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Colour — status (extension)</h2><p>Added to cover feedback states while keeping the dashboard’s saturation and softness.</p>
+    <div class="doc-demo  is-solo" data-nocode>
+<div class="swatch-grid"><div class="swatch"><div class="swatch-color" style="background:#1f9d6b"></div><div class="swatch-meta"><strong>Success</strong><code>--c-success</code><br><code>#1f9d6b</code></div></div><div class="swatch"><div class="swatch-color" style="background:#c77d00"></div><div class="swatch-meta"><strong>Warning</strong><code>--c-warning</code><br><code>#c77d00</code></div></div><div class="swatch"><div class="swatch-color" style="background:#d93a4a"></div><div class="swatch-meta"><strong>Danger</strong><code>--c-danger</code><br><code>#d93a4a</code></div></div><div class="swatch"><div class="swatch-color" style="background:#e6f6ef"></div><div class="swatch-meta"><strong>Success bg</strong><code>--c-success-bg</code><br><code>#e6f6ef</code></div></div><div class="swatch"><div class="swatch-color" style="background:#fff4de"></div><div class="swatch-meta"><strong>Warning bg</strong><code>--c-warning-bg</code><br><code>#fff4de</code></div></div><div class="swatch"><div class="swatch-color" style="background:#fdecee"></div><div class="swatch-meta"><strong>Danger bg</strong><code>--c-danger-bg</code><br><code>#fdecee</code></div></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Typography</h2><p>Be Vietnam Pro for UI, JetBrains Mono for code. Labels and links are weight 500; headings 600.</p>
+    <div class="doc-demo ">
+<div class="stack">
+  <div class="t-display">Display 2.25rem / 600</div>
+  <div class="t-h1">Heading 1 — 1.75rem / 600</div>
+  <div class="t-h2">Heading 2 — 1.25rem / 600</div>
+  <div class="t-h3">Heading 3 — 1rem / 500</div>
+  <div class="t-body">Body — 1rem / 400. Supercharge your workflow and connect the tools you use every day.</div>
+  <div class="t-small t-secondary">Small secondary — 0.875rem. Used for descriptions and helper copy.</div>
+  <div class="t-caption t-secondary">Caption — 0.75rem. Used for metadata and field errors.</div>
+  <div class="t-mono t-small">Mono — const ready = true;</div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Spacing</h2><p>4px base. Components use <code class="code-inline">--sp-1</code> to <code class="code-inline">--sp-12</code>.</p>
+    <div class="doc-demo ">
+<div class="stack"><div class="row"><code class="code-inline" style="width:80px">--sp-1</code><div style="height:16px;width:0.25rem;background:var(--c-accent-primary);border-radius:4px"></div><span class="t-caption t-secondary">0.25rem</span></div><div class="row"><code class="code-inline" style="width:80px">--sp-2</code><div style="height:16px;width:0.5rem;background:var(--c-accent-primary);border-radius:4px"></div><span class="t-caption t-secondary">0.5rem</span></div><div class="row"><code class="code-inline" style="width:80px">--sp-3</code><div style="height:16px;width:0.75rem;background:var(--c-accent-primary);border-radius:4px"></div><span class="t-caption t-secondary">0.75rem</span></div><div class="row"><code class="code-inline" style="width:80px">--sp-4</code><div style="height:16px;width:1rem;background:var(--c-accent-primary);border-radius:4px"></div><span class="t-caption t-secondary">1rem</span></div><div class="row"><code class="code-inline" style="width:80px">--sp-5</code><div style="height:16px;width:1.25rem;background:var(--c-accent-primary);border-radius:4px"></div><span class="t-caption t-secondary">1.25rem</span></div><div class="row"><code class="code-inline" style="width:80px">--sp-6</code><div style="height:16px;width:1.5rem;background:var(--c-accent-primary);border-radius:4px"></div><span class="t-caption t-secondary">1.5rem</span></div><div class="row"><code class="code-inline" style="width:80px">--sp-8</code><div style="height:16px;width:2rem;background:var(--c-accent-primary);border-radius:4px"></div><span class="t-caption t-secondary">2rem</span></div><div class="row"><code class="code-inline" style="width:80px">--sp-10</code><div style="height:16px;width:2.5rem;background:var(--c-accent-primary);border-radius:4px"></div><span class="t-caption t-secondary">2.5rem</span></div><div class="row"><code class="code-inline" style="width:80px">--sp-12</code><div style="height:16px;width:3rem;background:var(--c-accent-primary);border-radius:4px"></div><span class="t-caption t-secondary">3rem</span></div></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Shape, elevation & focus</h2><p>8px radius everywhere, 2px soft borders, layered shadows, and a 4px tinted focus ring.</p>
+    <div class="doc-demo ">
+<div class="grid-3">
+  <div class="tile"><h3>--shadow-card</h3><p>Cards, tiles, tables.</p></div>
+  <div class="tile" style="box-shadow:var(--shadow-raised)"><h3>--shadow-raised</h3><p>Menus, popovers, modals.</p></div>
+  <div class="tile" style="box-shadow:var(--focus-ring), var(--shadow-card)"><h3>--focus-ring</h3><p>Keyboard focus indicator.</p></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Motion</h2><p>A single <code class="code-inline">0.15s ease</code> transition handles colour, border and transform changes. Animations respect <code class="code-inline">prefers-reduced-motion</code>.</p>
+    <div class="doc-demo ">
+<button class="button" type="button">Hover me — --ease (0.15s)</button>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Other tokens</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">--control-h / -sm / -lg</code></td><td>40 / 32 / 48 px interactive control heights</td></tr><tr><td><code class="code-inline">--radius</code></td><td>8px default corner radius</td></tr><tr><td><code class="code-inline">--border-w</code></td><td>2px control border</td></tr><tr><td><code class="code-inline">--z-dropdown … --z-toast</code></td><td>Layer scale: 100, 200, 300, 400, 500</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span></span><span><a class="link" href="button.html">Button <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

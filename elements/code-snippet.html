@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code snippet · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#content">Content</a></li>
+      <li aria-current="page">Code snippet</li>
+    </ol></nav>
+    <h1>Code snippet</h1>
+    <p>Displays code inline, as a single line or as an expandable multi-line block, with copy-to-clipboard.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Inline</h2>
+    <div class="doc-demo ">
+<p class="t-small">Install with <code class="code-inline">npm install @orbi/ui</code> and import the stylesheet.</p>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Single line</h2>
+    <div class="doc-demo ">
+<div class="code-block code-block--single"><button class="code-copy" type="button" aria-label="Copy"><i class="ph-copy-bold"></i></button><pre><code>npm install @orbi/ui</code></pre></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Multi-line</h2>
+    <div class="doc-demo ">
+<div class="code-block code-block--multi"><button class="code-copy" type="button" aria-label="Copy"><i class="ph-copy-bold"></i></button><pre><code><span class="tok-c">// Enable an integration</span>
+<span class="tok-k">const</span> orbi = <span class="tok-k">await</span> connect({
+  token: <span class="tok-s">"sk_live_••••"</span>,
+  retries: <span class="tok-n">3</span>,
+});
+
+<span class="tok-k">await</span> orbi.integrations.enable(<span class="tok-s">"github"</span>);
+<span class="tok-k">await</span> orbi.integrations.enable(<span class="tok-s">"slack"</span>);
+console.log(<span class="tok-s">"done"</span>);</code></pre><button class="code-more" type="button"><span>Show more</span></button></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Light</h2>
+    <div class="doc-demo ">
+<div class="code-block code-block--light code-block--single"><button class="code-copy" type="button" aria-label="Copy"><i class="ph-copy-bold"></i></button><pre><code>curl https://api.orbi.dev/v1/status</code></pre></div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="card.html"><i class="ph-arrow-left-bold"></i> Card</a></span><span><a class="link" href="contained-list.html">Contained list <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

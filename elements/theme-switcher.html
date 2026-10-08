@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Theme switcher · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#actions">Actions</a></li>
+      <li aria-current="page">Theme switcher</li>
+    </ol></nav>
+    <h1>Theme switcher</h1>
+    <p>Switches the whole interface between light and dark. The choice is saved in the browser, and “System” follows the operating system setting. Try it on this page.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Icon toggle</h2>
+    <div class="doc-demo">
+<button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Segmented</h2>
+    <div class="doc-demo">
+<div class="segmented" data-theme-switcher role="group" aria-label="Theme">
+  <button type="button" data-theme-value="light"><i class="ph-sun-bold"></i><span>Light</span></button>
+  <button type="button" data-theme-value="dark"><i class="ph-moon-bold"></i><span>Dark</span></button>
+  <button type="button" data-theme-value="system"><i class="ph-desktop-bold"></i><span>System</span></button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Setup</h2>
+    <div class="doc-demo" data-nocode>
+<div class="code-block"><pre><code>&lt;!-- in &lt;head&gt;, after the stylesheet, so the theme is set before first paint --&gt;
+&lt;link rel="stylesheet" href="css/main.css"&gt;
+&lt;script src="js/theme.js"&gt;&lt;/script&gt;
+
+// from script
+OrbiTheme.set("dark");            // "light" | "dark" | "system"
+document.addEventListener("themechange", function (e) { console.log(e.detail.theme); });</code></pre></div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="../index.html"><i class="ph-arrow-left-bold"></i> All components</a></span><span></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

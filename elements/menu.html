@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#overlays">Overlays</a></li>
+      <li aria-current="page">Menu</li>
+    </ol></nav>
+    <h1>Menu</h1>
+    <p>A list of commands or options in a floating panel — with icons, shortcuts, groups, checkable items and submenus.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Rich menu</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="menu-wrap is-open" style="margin-bottom:17rem">
+  <button class="button" type="button" data-trigger aria-expanded="true"><i class="ph-list-bold"></i><span>Menu</span></button>
+  <div class="menu" role="menu">
+    <div class="menu-label">File</div>
+    <button class="menu-item" role="menuitem" type="button"><i class="ph-file-plus-bold"></i>New file<kbd>⌘N</kbd></button>
+    <button class="menu-item" role="menuitem" type="button"><i class="ph-folder-open-bold"></i>Open…<kbd>⌘O</kbd></button>
+    <button class="menu-item has-sub" role="menuitem" type="button"><i class="ph-export-bold"></i>Export as
+      <span class="menu menu-sub" role="menu"><span class="menu-item">PDF</span><span class="menu-item">PNG</span><span class="menu-item">SVG</span></span></button>
+    <div class="menu-divider"></div>
+    <div class="menu-label">View</div>
+    <button class="menu-item" role="menuitemcheckbox" aria-checked="true" type="button">Show sidebar</button>
+    <button class="menu-item" role="menuitemcheckbox" aria-checked="false" type="button">Show grid</button>
+    <div class="menu-divider"></div>
+    <button class="menu-item" role="menuitem" aria-disabled="true" type="button">Disabled</button>
+    <button class="menu-item menu-item--danger" role="menuitem" type="button"><i class="ph-trash-bold"></i>Delete</button>
+  </div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Radio group</h2>
+    <div class="doc-demo doc-demo--tall">
+<div class="menu-wrap"><button class="button" type="button" data-trigger aria-expanded="false"><span>Sort by</span><i class="ph-caret-down-bold"></i></button>
+  <div class="menu" role="menu"><button class="menu-item" role="menuitemradio" aria-checked="true" type="button">Name</button><button class="menu-item" role="menuitemradio" aria-checked="false" type="button">Date</button><button class="menu-item" role="menuitemradio" aria-checked="false" type="button">Size</button></div></div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="progress-bar.html"><i class="ph-arrow-left-bold"></i> Progress bar</a></span><span><a class="link" href="modal.html">Modal <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

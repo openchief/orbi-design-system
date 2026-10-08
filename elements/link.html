@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Link · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#actions">Actions</a></li>
+      <li aria-current="page">Link</li>
+    </ol></nav>
+    <h1>Link</h1>
+    <p>Navigates to another page or location. Links share the action-violet colour used by dashboard navigation.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Standalone</h2>
+    <div class="doc-demo ">
+<div class="row" style="gap:2rem">
+  <a class="link" href="#">View integration</a>
+  <a class="link" href="#">Learn more <i class="ph-arrow-right-bold"></i></a>
+  <a class="link" href="#"><i class="ph-download-simple-bold"></i> Download</a>
+  <a class="link link--sm" href="#">Small link</a>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Inline</h2><p>Underlined so links are recognisable inside body text.</p>
+    <div class="doc-demo ">
+<p class="t-small" style="max-width:60ch">Supercharge your workflow and <a class="link link--inline" href="#">connect the tools</a> you use every day, or <a class="link link--inline" href="#">request a new integration</a>.</p>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Disabled</h2>
+    <div class="doc-demo ">
+<a class="link link--disabled" href="#" aria-disabled="true">Unavailable link</a>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">.link</code></td><td>Standalone link</td></tr><tr><td><code class="code-inline">.link--inline</code></td><td>Underlined link for running text</td></tr><tr><td><code class="code-inline">.link--sm</code></td><td>Small</td></tr><tr><td><code class="code-inline">.link--disabled</code></td><td>Non-interactive</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="button.html"><i class="ph-arrow-left-bold"></i> Button</a></span><span><a class="link" href="menu-buttons.html">Menu buttons <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

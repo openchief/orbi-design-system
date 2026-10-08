@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Button · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#actions">Actions</a></li>
+      <li aria-current="page">Button</li>
+    </ol></nav>
+    <h1>Button</h1>
+    <p>Triggers an action. The default is the dashboard’s outlined button; primary, tertiary, ghost and danger add emphasis.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Kinds</h2><p>Use one primary button per view.</p>
+    <div class="doc-demo ">
+<div class="row">
+  <button class="button button--primary" type="button"><i class="ph-lightning-bold"></i><span>Primary</span></button>
+  <button class="button" type="button"><span>Secondary</span></button>
+  <button class="button button--tertiary" type="button"><span>Tertiary</span></button>
+  <button class="button button--ghost" type="button"><span>Ghost</span></button>
+  <button class="button button--danger" type="button"><span>Danger</span></button>
+  <button class="button button--danger-outline" type="button"><span>Danger outline</span></button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Sizes</h2>
+    <div class="doc-demo ">
+<div class="row">
+  <button class="button button--primary button--sm" type="button"><span>Small</span></button>
+  <button class="button button--primary" type="button"><span>Default</span></button>
+  <button class="button button--primary button--lg" type="button"><span>Large</span></button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>With icons</h2>
+    <div class="doc-demo ">
+<div class="row">
+  <a href="#" class="button"><i class="ph-faders-bold"></i><span>Filters</span></a>
+  <a href="#" class="button"><i class="ph-plus-bold"></i><span>Request integration</span></a>
+  <button class="button button--primary" type="button"><span>Continue</span><i class="ph-arrow-right-bold"></i></button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Icon buttons</h2><p>Icon-only buttons need an <code class="code-inline">aria-label</code>.</p>
+    <div class="doc-demo ">
+<div class="row">
+  <a href="#" class="icon-button" aria-label="Settings"><i class="ph-gear-bold"></i></a>
+  <a href="#" class="icon-button" aria-label="Notifications"><i class="ph-bell-bold"></i></a>
+  <button class="icon-button icon-button--sm" type="button" aria-label="Close"><i class="ph-x-bold"></i></button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>States</h2>
+    <div class="doc-demo ">
+<div class="row">
+  <button class="button button--primary" type="button" disabled><span>Disabled</span></button>
+  <button class="button" type="button" disabled><span>Disabled</span></button>
+  <button class="button button--primary" type="button"><span class="spinner spinner--sm spinner--light"></span><span>Loading</span></button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Button group & block</h2>
+    <div class="doc-demo ">
+<div class="stack">
+  <div class="button-group"><button class="button" type="button"><span>Day</span></button><button class="button" type="button"><span>Week</span></button><button class="button" type="button"><span>Month</span></button></div>
+  <button class="button button--primary button--block" type="button"><span>Full width</span></button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Class reference</h2>
+    <table class="doc-table"><thead><tr><th>Selector / attribute</th><th>Purpose</th></tr></thead><tbody><tr><td><code class="code-inline">.button</code></td><td>Base (outlined) — 40px, 2px border, indigo on hover</td></tr><tr><td><code class="code-inline">.button--primary / --tertiary / --ghost / --danger / --danger-outline</code></td><td>Kinds</td></tr><tr><td><code class="code-inline">.button--sm / --lg / --block</code></td><td>Size and width</td></tr><tr><td><code class="code-inline">.icon-button</code></td><td>Square 40px icon-only button</td></tr><tr><td><code class="code-inline">.button-group</code></td><td>Joins adjacent buttons</td></tr></tbody></table>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="foundations.html"><i class="ph-arrow-left-bold"></i> Foundations</a></span><span><a class="link" href="link.html">Link <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

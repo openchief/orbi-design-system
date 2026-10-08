@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Content switcher · orbi design system</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+<header class="doc-top">
+  <div class="responsive-wrapper">
+    <a class="brand" href="../index.html"><span class="shell-logo-mark"></span> orbi design system</a>
+    <div class="doc-top-actions"><a class="link" href="../index.html"><i class="ph-squares-four-bold"></i> All components</a><button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ph-moon-bold theme-icon-to-dark"></i><i class="ph-sun-bold theme-icon-to-light"></i></button></div>
+  </div>
+</header>
+<main class="responsive-wrapper">
+  <div class="doc-hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+      <li><a href="../index.html">Components</a></li>
+      <li><a href="../index.html#navigation">Navigation</a></li>
+      <li aria-current="page">Content switcher</li>
+    </ol></nav>
+    <h1>Content switcher</h1>
+    <p>A segmented control that toggles between a small set of views or modes in place.</p>
+  </div>
+  <section class="doc-section">
+    <h2>Default</h2>
+    <div class="doc-demo ">
+<div class="switcher" role="tablist"><button class="active" data-value="a">List</button><button data-value="b">Grid</button><button data-value="c">Board</button></div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Sizes & icons</h2>
+    <div class="doc-demo ">
+<div class="stack">
+  <div class="switcher switcher--sm"><button class="active">Small</button><button>Small</button></div>
+  <div class="switcher"><button class="active"><i class="ph-list-bold"></i>List</button><button><i class="ph-squares-four-bold"></i>Grid</button></div>
+  <div class="switcher switcher--lg"><button class="active">Large</button><button>Large</button><button disabled>Disabled</button></div>
+</div>
+    </div>
+  </section>
+  <section class="doc-section">
+    <h2>Driving content</h2>
+    <div class="doc-demo ">
+<div id="sw-demo" class="stack">
+  <div class="switcher switcher--block" data-target="#sw-demo"><button class="active" data-value="m">Monthly</button><button data-value="y">Yearly</button></div>
+  <div data-switch-panel="m" class="tile"><h3>$12 / month</h3><p>Billed monthly.</p></div>
+  <div data-switch-panel="y" class="tile" hidden><h3>$9 / month</h3><p>Billed yearly, save 25%.</p></div>
+</div>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span><a class="link" href="breadcrumb.html"><i class="ph-arrow-left-bold"></i> Breadcrumb</a></span><span><a class="link" href="pagination.html">Pagination <i class="ph-arrow-right-bold"></i></a></span>
+  </footer>
+</main>
+<script src="https://unpkg.com/phosphor-icons"></script>
+<script src="../js/code-samples.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>
